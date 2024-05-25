@@ -143,7 +143,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/05/19/%E6%96%87%E6%A1%A3/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/02/05/hexo%E6%9C%80%E7%AE%80%E5%8D%95%E7%9A%84%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%EF%BC%88Mac%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -161,7 +161,105 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/05/19/%E6%96%87%E6%A1%A3/" class="post-title-link" itemprop="url">未命名</a>
+          <a href="/2024/02/05/hexo%E6%9C%80%E7%AE%80%E5%8D%95%E7%9A%84%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%EF%BC%88Mac%EF%BC%89/" class="post-title-link" itemprop="url">hexo最简单的搭建教程（基于Mac）</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2024-02-05 21:26:25 / 修改时间：21:29:08" itemprop="dateCreated datePublished" datetime="2024-02-05T21:26:25+08:00">2024-02-05</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h1><p>下载并安装nodejs：<a target="_blank" rel="noopener" href="https://nodejs.org/en">https://nodejs.org/en</a></p>
+<p>下载完成后会得到两个东西<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240205195057.png" alt="image.png"><br>node.js是本体<br>npm是包管理器，一会用于下载hexo框架</p>
+<p>安装完成后输入命令<br>node -v<br>npm -v<br>如果正常输出则说明二者均已成功安装</p>
+<h1 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h1><p>终端输入指令：<br>npm install -g hexo-cli</p>
+<p>-g应该是全局安装的意思</p>
+<p>输入<br>hexo -v<br>看看是否正常输出</p>
+<h1 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h1><p>找个地方建空文件夹</p>
+<p>打开终端</p>
+<p>进入管理员模式：sudo su</p>
+<p>hexo初始化：hexo init</p>
+<p>hexo启动：hexo s</p>
+<p>此时已经可以在本地运行hexo</p>
+<h1 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h1><p>使用Github pages功能进行远程部署hexo博客（其他人输入网址后即可看到我的博客）</p>
+<p>注意：github仓库名格式为（github用户名.github.io）</p>
+<ol>
+<li>先将我的github账号与本机进行ssh链接</li>
+<li>修改blog目录下的_config.xml文件中的deploy选项，如下图所示</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240205200505.png" alt="image.png|700"></p>
+<blockquote>
+<p>repo为github仓库中ssh链接</p>
+</blockquote>
+<p>Tips：</p>
+<p>hexo常用命令：</p>
+<p>hexo clean 清除缓存</p>
+<p>hexo g 生成网页</p>
+<p>hexo s 启动hexo</p>
+<p>hexo d 远程分发hexo</p>
+<p>hexo new 新建一篇博客</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/02/05/%E6%96%87%E6%A1%A3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="xs">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="徐苏的博客">
+      <meta itemprop="description" content="上市时晋级赛">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 徐苏的博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/02/05/%E6%96%87%E6%A1%A3/" class="post-title-link" itemprop="url">简历</a>
         </h2>
 
         <div class="post-meta-container">
@@ -172,14 +270,14 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2024-05-19 14:47:58" itemprop="dateCreated datePublished" datetime="2024-05-19T14:47:58+08:00">2024-05-19</time>
+      <time title="创建时间：2024-02-05 21:26:25" itemprop="dateCreated datePublished" datetime="2024-02-05T21:26:25+08:00">2024-02-05</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-05-23 22:31:09" itemprop="dateModified" datetime="2024-05-23T22:31:09+08:00">2024-05-23</time>
+      <time title="修改时间：2024-05-25 18:26:26" itemprop="dateModified" datetime="2024-05-25T18:26:26+08:00">2024-05-25</time>
     </span>
 
   
@@ -1797,104 +1895,6 @@
 <p>  <img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423110156.png" alt="image.png"></p>
 <p>补充：</p>
 <p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423110211.png" alt="image.png"></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/02/05/hexo%E6%9C%80%E7%AE%80%E5%8D%95%E7%9A%84%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%EF%BC%88Mac%EF%BC%89/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="xs">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="徐苏的博客">
-      <meta itemprop="description" content="上市时晋级赛">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 徐苏的博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/02/05/hexo%E6%9C%80%E7%AE%80%E5%8D%95%E7%9A%84%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%EF%BC%88Mac%EF%BC%89/" class="post-title-link" itemprop="url">hexo最简单的搭建教程（基于Mac）</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2024-02-05 21:26:25 / 修改时间：21:29:08" itemprop="dateCreated datePublished" datetime="2024-02-05T21:26:25+08:00">2024-02-05</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h1><p>下载并安装nodejs：<a target="_blank" rel="noopener" href="https://nodejs.org/en">https://nodejs.org/en</a></p>
-<p>下载完成后会得到两个东西<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240205195057.png" alt="image.png"><br>node.js是本体<br>npm是包管理器，一会用于下载hexo框架</p>
-<p>安装完成后输入命令<br>node -v<br>npm -v<br>如果正常输出则说明二者均已成功安装</p>
-<h1 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h1><p>终端输入指令：<br>npm install -g hexo-cli</p>
-<p>-g应该是全局安装的意思</p>
-<p>输入<br>hexo -v<br>看看是否正常输出</p>
-<h1 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h1><p>找个地方建空文件夹</p>
-<p>打开终端</p>
-<p>进入管理员模式：sudo su</p>
-<p>hexo初始化：hexo init</p>
-<p>hexo启动：hexo s</p>
-<p>此时已经可以在本地运行hexo</p>
-<h1 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h1><p>使用Github pages功能进行远程部署hexo博客（其他人输入网址后即可看到我的博客）</p>
-<p>注意：github仓库名格式为（github用户名.github.io）</p>
-<ol>
-<li>先将我的github账号与本机进行ssh链接</li>
-<li>修改blog目录下的_config.xml文件中的deploy选项，如下图所示</li>
-</ol>
-<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240205200505.png" alt="image.png|700"></p>
-<blockquote>
-<p>repo为github仓库中ssh链接</p>
-</blockquote>
-<p>Tips：</p>
-<p>hexo常用命令：</p>
-<p>hexo clean 清除缓存</p>
-<p>hexo g 生成网页</p>
-<p>hexo s 启动hexo</p>
-<p>hexo d 远程分发hexo</p>
-<p>hexo new 新建一篇博客</p>
 
       
     </div>
