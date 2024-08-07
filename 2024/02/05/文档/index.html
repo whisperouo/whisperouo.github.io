@@ -1,0 +1,2001 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.19.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="简历相关自我介绍面试官您好，我叫徐苏。今天应聘的岗位是大数据开发工程师。 目前有三年的工作经验。 在以往的工作中我参与过多个大数据相关的项目，最近做的一个项目中主要负责使用Spark进行业务指标计算（如用户session访问时长、Top10热门等）、利用SparkStreaming实现实时动态黑名单机制、实时统计每天个城市广告点击次数等等。 技术方面我熟练使用Spark SQL、Spark Str">
+<meta property="og:type" content="article">
+<meta property="og:title" content="简历">
+<meta property="og:url" content="http://example.com/2024/02/05/%E6%96%87%E6%A1%A3/index.html">
+<meta property="og:site_name" content="徐苏的博客">
+<meta property="og:description" content="简历相关自我介绍面试官您好，我叫徐苏。今天应聘的岗位是大数据开发工程师。 目前有三年的工作经验。 在以往的工作中我参与过多个大数据相关的项目，最近做的一个项目中主要负责使用Spark进行业务指标计算（如用户session访问时长、Top10热门等）、利用SparkStreaming实现实时动态黑名单机制、实时统计每天个城市广告点击次数等等。 技术方面我熟练使用Spark SQL、Spark Str">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423155207.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423155645.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/2%E3%80%81%E6%B4%BE%E5%8F%91%EF%BC%88shuffle%EF%BC%89%EF%BC%9A%E5%B0%86key%E7%9B%B8%E5%90%8C%E7%9A%84%E9%94%AE%E5%80%BC%E5%AF%B9%E6%94%BE%E5%88%B0%E4%B8%80%E5%9D%97%E5%8E%BB%E3%80%82.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240426214430.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423090349.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423090436.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423090444.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423090754.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423090818.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423090634.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423090848.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423090904.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423090658.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423090708.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423090919.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423090941.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240426222345.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240426222352.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240426222619.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423091236.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240426215018.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/image-20240519234124064.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423093221.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423093214.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423093231.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423093248.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423093107.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423093150.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423091506.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423091400.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423092958.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423093533.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423093559.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423093604.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423093616.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423093642.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423093647.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423093715.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423093722.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423093733.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423093751.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423093808.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423093848.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423093905.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423093918.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423093937.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423093949.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423093955.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423094009.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423103712.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423110022.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423110037.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423110049.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423110101.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423104438.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423104452.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423110253.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423110301.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423110337.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423110347.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423110356.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423104503.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423104512.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423104528.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423104538.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423104545.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423104606.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423104614.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423104624.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423104631.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423104638.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423104648.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423104655.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/%E5%9B%BE%E5%83%8F.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423105324.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423105422.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423105514.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423105523.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423105608.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423105642.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423105658.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423110458.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423110510.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423104738.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423104745.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423105808.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423105914.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423105934.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423110545.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423110648.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423110700.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423110733.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423110745.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423110804.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423110821.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423110836.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423110850.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423110900.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423110911.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423104721.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423110949.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423111019.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423111040.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423111052.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423111120.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423111130.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423104758.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423110146.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423110156.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423110211.png">
+<meta property="article:published_time" content="2024-02-05T13:26:25.000Z">
+<meta property="article:modified_time" content="2024-05-25T10:39:45.688Z">
+<meta property="article:author" content="xs">
+<meta property="article:tag" content="???">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/whisperouo/images/main/20240423155207.png">
+
+
+<link rel="canonical" href="http://example.com/2024/02/05/%E6%96%87%E6%A1%A3/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2024/02/05/%E6%96%87%E6%A1%A3/","path":"2024/02/05/文档/","title":"简历"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>简历 | 徐苏的博客</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">徐苏的博客</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">sss</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AE%80%E5%8E%86%E7%9B%B8%E5%85%B3"><span class="nav-number">1.</span> <span class="nav-text">简历相关</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.1.</span> <span class="nav-text">自我介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.2.</span> <span class="nav-text">项目介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A6%BB%E7%BA%BF%E9%A1%B9%E7%9B%AE"><span class="nav-number">1.2.1.</span> <span class="nav-text">离线项目</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AE%80%E8%BF%B0%E9%A1%B9%E7%9B%AE%E5%86%85%E5%AE%B9"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">简述项目内容</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B4%E4%B8%AA%E9%A1%B9%E7%9B%AE%E5%81%9A%E4%BA%86%E4%BB%80%E4%B9%88"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">整个项目做了什么</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%81%9A%E4%BA%86%E4%BB%80%E4%B9%88"><span class="nav-number">1.2.1.3.</span> <span class="nav-text">做了什么</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8A%80%E6%9C%AF%E9%9A%BE%E7%82%B9"><span class="nav-number">1.2.1.4.</span> <span class="nav-text">技术难点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-number">1.2.1.5.</span> <span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E7%BB%84%E7%BB%87%E6%9E%B6%E6%9E%84"><span class="nav-number">1.2.1.5.1.</span> <span class="nav-text">项目组织架构</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%A1%86%E6%9E%B6%E7%89%88%E6%9C%AC"><span class="nav-number">1.2.1.5.2.</span> <span class="nav-text">框架版本</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E6%95%B0%E6%8D%AE%E9%87%8F"><span class="nav-number">1.2.1.5.3.</span> <span class="nav-text">项目数据量</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="nav-number">1.2.1.5.4.</span> <span class="nav-text">服务器</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E5%88%B0%E7%9A%84%E6%8A%80%E6%9C%AF"><span class="nav-number">1.2.1.5.5.</span> <span class="nav-text">使用到的技术</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E6%97%B6%E9%A1%B9%E7%9B%AE"><span class="nav-number">1.2.2.</span> <span class="nav-text">实时项目</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AE%80%E8%BF%B0%E9%A1%B9%E7%9B%AE%E5%86%85%E5%AE%B9-1"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">简述项目内容</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%81%9A%E4%BA%86%E4%BB%80%E4%B9%88-1"><span class="nav-number">1.2.2.2.</span> <span class="nav-text">做了什么</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9B%9B%E4%B8%AA%E6%A0%B8%E5%BF%83%E6%80%8E%E4%B9%88%E5%81%9A%E7%9A%84"><span class="nav-number">1.2.2.3.</span> <span class="nav-text">四个核心怎么做的</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%94%A8%E6%88%B7session%E8%AE%BF%E9%97%AE%E6%97%B6%E9%95%BF%E7%9A%84%E8%AE%A1%E7%AE%97"><span class="nav-number">1.2.2.3.1.</span> <span class="nav-text">用户session访问时长的计算</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Top10%E7%83%AD%E9%97%A8%E7%9A%84%E8%AE%A1%E7%AE%97"><span class="nav-number">1.2.2.3.2.</span> <span class="nav-text">Top10热门的计算</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%AE%9E%E6%97%B6%E5%8A%A8%E6%80%81%E9%BB%91%E5%90%8D%E5%8D%95%E6%9C%BA%E5%88%B6"><span class="nav-number">1.2.2.3.3.</span> <span class="nav-text">实时动态黑名单机制</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%AE%9E%E6%97%B6%E7%BB%9F%E8%AE%A1%E6%AF%8F%E5%A4%A9%E5%90%84%E5%9F%8E%E5%B8%82%E5%B9%BF%E5%91%8A%E7%82%B9%E5%87%BB%E7%8E%87"><span class="nav-number">1.2.2.3.4.</span> <span class="nav-text">实时统计每天各城市广告点击率</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8A%80%E6%9C%AF%E9%9A%BE%E7%82%B9-1"><span class="nav-number">1.2.2.4.</span> <span class="nav-text">技术难点</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E4%B8%80%E3%80%81"><span class="nav-number">1.2.2.4.0.1.</span> <span class="nav-text">一、</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E4%BA%8C%E3%80%81"><span class="nav-number">1.2.2.4.0.2.</span> <span class="nav-text">二、</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84"><span class="nav-number">1.2.2.4.1.</span> <span class="nav-text">技术架构</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E6%A6%82%E5%BF%B5"><span class="nav-number">1.2.2.5.</span> <span class="nav-text">一些概念</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96-1"><span class="nav-number">1.2.3.</span> <span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A6%BB%E8%81%8C"><span class="nav-number">1.2.3.1.</span> <span class="nav-text">为什么离职</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AF%B9%E9%A1%B9%E7%9B%AE%E5%8F%AF%E4%BB%A5%E6%80%8E%E4%B9%88%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.2.3.2.</span> <span class="nav-text">对项目可以怎么介绍</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%AB%E8%82%A1%E6%96%87%E7%9B%B8%E5%85%B3"><span class="nav-number">2.</span> <span class="nav-text">八股文相关</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hadoop"><span class="nav-number">2.1.</span> <span class="nav-text">Hadoop</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-number">2.1.1.</span> <span class="nav-text">是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hdfs%E6%B5%81%E7%A8%8B"><span class="nav-number">2.1.2.</span> <span class="nav-text">hdfs流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mapreduce%E6%B5%81%E7%A8%8B"><span class="nav-number">2.1.3.</span> <span class="nav-text">mapreduce流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#yarn%E6%B5%81%E7%A8%8B"><span class="nav-number">2.1.4.</span> <span class="nav-text">yarn流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E7%AB%AF%E5%8F%A3%E5%8F%B7-%E4%B8%89%E4%B8%AA"><span class="nav-number">2.1.5.</span> <span class="nav-text">常用端口号 三个</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%B8%E5%BF%83%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6-%E4%B8%A4%E4%B8%AA"><span class="nav-number">2.1.6.</span> <span class="nav-text">核心配置文件 两个</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%80%E5%8D%95%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B"><span class="nav-number">2.1.7.</span> <span class="nav-text">简单集群搭建流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hadoop%E4%B8%8Espark%E4%BB%A5%E5%90%8E%E5%90%84%E8%B4%9F%E8%B4%A3%E4%BB%80%E4%B9%88"><span class="nav-number">2.1.8.</span> <span class="nav-text">hadoop与spark以后各负责什么</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spark"><span class="nav-number">2.2.</span> <span class="nav-text">Spark</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%98%AF%E4%BB%80%E4%B9%88-1"><span class="nav-number">2.2.1.</span> <span class="nav-text">是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%94%E4%B8%AA%E7%BB%84%E6%88%90%E9%83%A8%E5%88%86"><span class="nav-number">2.2.2.</span> <span class="nav-text">五个组成部分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E8%A7%A6%E5%8F%91%E6%97%B6%E6%9C%BA"><span class="nav-number">2.2.3.</span> <span class="nav-text">计算触发时机</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BF%AB%E9%80%9F%E7%9A%84%E4%B8%BB%E8%A6%81%E5%8E%9F%E5%9B%A0"><span class="nav-number">2.2.4.</span> <span class="nav-text">快速的主要原因</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B%E5%8F%8A%E7%9B%B8%E5%85%B3%E7%BB%84%E4%BB%B6"><span class="nav-number">2.2.5.</span> <span class="nav-text">工作流程及相关组件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#job-stage-task%E7%90%86%E8%A7%A3"><span class="nav-number">2.2.6.</span> <span class="nav-text">job-stage-task理解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E8%A1%8C%E6%A8%A1%E5%BC%8F-%E5%9B%9B%E4%B8%AA"><span class="nav-number">2.2.7.</span> <span class="nav-text">运行模式 四个</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#yarn-cluster%E5%92%8Cyarn-client%E5%8C%BA%E5%88%AB"><span class="nav-number">2.2.8.</span> <span class="nav-text">yarn-cluster和yarn-client区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8F%90%E4%BA%A4%E4%BD%9C%E4%B8%9A%E5%8F%82%E6%95%B0"><span class="nav-number">2.2.9.</span> <span class="nav-text">提交作业参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%A3%E9%87%8A%E5%AE%BD%E7%AA%84%E4%BE%9D%E8%B5%96"><span class="nav-number">2.2.10.</span> <span class="nav-text">解释宽窄依赖</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFshuffle"><span class="nav-number">2.2.11.</span> <span class="nav-text">什么是shuffle</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%AF%E8%83%BD%E5%AF%BC%E8%87%B4shuffle%E7%9A%84%E7%AE%97%E5%AD%90"><span class="nav-number">2.2.12.</span> <span class="nav-text">可能导致shuffle的算子</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E7%9A%84%E7%AE%97%E5%AD%90"><span class="nav-number">2.2.13.</span> <span class="nav-text">常用的算子</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%A6%E4%B8%80%E4%B8%8B%EF%BC%88%E4%B8%A4%E7%B1%BB%E7%AE%97%E5%AD%90%EF%BC%88%E5%B9%B6%E5%88%97%E5%87%BA%E5%B8%B8%E7%94%A8%E7%9A%84%EF%BC%89%EF%BC%89"><span class="nav-number">2.2.14.</span> <span class="nav-text">学一下（两类算子（并列出常用的））</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0TopN%E7%9A%84%E8%8E%B7%E5%8F%96"><span class="nav-number">2.2.15.</span> <span class="nav-text">如何实现TopN的获取</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E5%80%BE%E6%96%9C"><span class="nav-number">2.2.16.</span> <span class="nav-text">数据倾斜</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%AC%E8%B4%A8"><span class="nav-number">2.2.16.1.</span> <span class="nav-text">本质</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%BE%E4%BE%8B"><span class="nav-number">2.2.16.2.</span> <span class="nav-text">举例</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%87%BA%E7%8E%B0%E5%8E%9F%E5%9B%A0"><span class="nav-number">2.2.16.3.</span> <span class="nav-text">出现原因</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%AF%E8%83%BD%E8%A7%A6%E5%8F%91%E6%95%B0%E6%8D%AE%E5%80%BE%E6%96%9C%E7%9A%84%E7%AE%97%E5%AD%90"><span class="nav-number">2.2.16.4.</span> <span class="nav-text">可能触发数据倾斜的算子</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E5%AE%9A%E4%BD%8D"><span class="nav-number">2.2.16.5.</span> <span class="nav-text">如何定位</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%EF%BC%88%E4%B8%A4%E4%B8%AA%EF%BC%89"><span class="nav-number">2.2.16.6.</span> <span class="nav-text">解决办法（两个）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96-2"><span class="nav-number">2.2.17.</span> <span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#RDD"><span class="nav-number">2.2.17.1.</span> <span class="nav-text">RDD</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#RDD%E5%88%86%E5%8C%BA"><span class="nav-number">2.2.17.1.1.</span> <span class="nav-text">RDD分区</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#RDD%E5%B9%B6%E8%A1%8C%E5%BA%A6"><span class="nav-number">2.2.17.1.2.</span> <span class="nav-text">RDD并行度</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DAG%EF%BC%88%E6%9C%89%E5%90%91%E6%97%A0%E7%8E%AF%E5%9B%BE%EF%BC%89"><span class="nav-number">2.2.17.2.</span> <span class="nav-text">DAG（有向无环图）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E6%A6%82%E5%BF%B5-1"><span class="nav-number">2.2.18.</span> <span class="nav-text">一些概念</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Sqoop"><span class="nav-number">2.3.</span> <span class="nav-text">Sqoop</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%98%AF%E4%BB%80%E4%B9%88-2"><span class="nav-number">2.3.1.</span> <span class="nav-text">是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E4%BE%8B"><span class="nav-number">2.3.2.</span> <span class="nav-text">实例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sqoop%E5%BA%95%E5%B1%82%E8%BF%90%E8%A1%8C%E7%9A%84%E4%BB%BB%E5%8A%A1%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-number">2.3.3.</span> <span class="nav-text">sqoop底层运行的任务是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sqoop%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA%E4%B8%80%E8%87%B4%E6%80%A7%E9%97%AE%E9%A2%98%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3"><span class="nav-number">2.3.4.</span> <span class="nav-text">sqoop数据导出一致性问题如何解决</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sqoop%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BAnull%E5%AD%98%E5%82%A8%E4%B8%80%E8%87%B4%E6%80%A7%E9%97%AE%E9%A2%98"><span class="nav-number">2.3.5.</span> <span class="nav-text">sqoop导入导出null存储一致性问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sqoop%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA%E4%B8%80%E6%AC%A1%E6%89%A7%E8%A1%8C%E5%A4%9A%E9%95%BF%E6%97%B6%E9%97%B4"><span class="nav-number">2.3.6.</span> <span class="nav-text">sqoop数据导出一次执行多长时间</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Kafka"><span class="nav-number">2.4.</span> <span class="nav-text">Kafka</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%98%AF%E4%BB%80%E4%B9%88-3"><span class="nav-number">2.4.1.</span> <span class="nav-text">是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E4%BA%86%E4%B8%89%E4%B8%AA%E7%9B%AE%E6%A0%87"><span class="nav-number">2.4.2.</span> <span class="nav-text">实现了三个目标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9B%B8%E5%85%B3%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A-%E4%B9%9D%E4%B8%AA"><span class="nav-number">2.4.3.</span> <span class="nav-text">相关名词解释 九个</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96-3"><span class="nav-number">2.4.4.</span> <span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E7%9A%84%E4%B8%A4%E7%A7%8D%E5%BD%A2%E5%BC%8F"><span class="nav-number">2.4.4.1.</span> <span class="nav-text">消息队列的两种形式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9E%B6%E6%9E%84"><span class="nav-number">2.4.4.2.</span> <span class="nav-text">架构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Kafka-%E6%9C%BA%E5%99%A8%E6%95%B0%E9%87%8F-2%EF%BC%88%E5%B3%B0%E5%80%BC%E7%94%9F%E4%BA%A7%E9%80%9F%E5%BA%A6%E5%89%AF%E6%9C%AC%E6%95%B0-100%EF%BC%89-1"><span class="nav-number">2.4.4.3.</span> <span class="nav-text">Kafka 机器数量&#x3D;2（峰值生产速度副本数&#x2F;100）+1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%89%AF%E6%9C%AC%E6%95%B0%E8%AE%BE%E5%AE%9A"><span class="nav-number">2.4.4.4.</span> <span class="nav-text">副本数设定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%86%E5%8C%BA%E6%95%B0"><span class="nav-number">2.4.4.5.</span> <span class="nav-text">分区数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%9B%91%E6%8E%A7"><span class="nav-number">2.4.4.6.</span> <span class="nav-text">监控</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A4%9A%E5%B0%91%E4%B8%AAtopic"><span class="nav-number">2.4.4.7.</span> <span class="nav-text">多少个topic</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Flume"><span class="nav-number">2.5.</span> <span class="nav-text">Flume</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%98%AF%E4%BB%80%E4%B9%88-4"><span class="nav-number">2.5.1.</span> <span class="nav-text">是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B9%B2%E4%BA%86%E4%BB%80%E4%B9%88"><span class="nav-number">2.5.2.</span> <span class="nav-text">干了什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E6%B5%81%E5%90%91"><span class="nav-number">2.5.3.</span> <span class="nav-text">数据流向</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E7%BB%84%E4%BB%B6-%E4%BA%94%E4%B8%AA"><span class="nav-number">2.5.4.</span> <span class="nav-text">基本组件 五个</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96-4"><span class="nav-number">2.5.5.</span> <span class="nav-text">其他</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hive"><span class="nav-number">2.6.</span> <span class="nav-text">Hive</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%98%AF%E4%BB%80%E4%B9%88-5"><span class="nav-number">2.6.1.</span> <span class="nav-text">是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%81%9A%E4%BA%86%E4%BB%80%E4%B9%88-2"><span class="nav-number">2.6.2.</span> <span class="nav-text">做了什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8E%E4%BC%A0%E7%BB%9F%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">2.6.3.</span> <span class="nav-text">与传统数据库的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%85%E9%83%A8%E8%A1%A8%E4%B8%8E%E5%A4%96%E9%83%A8%E8%A1%A8"><span class="nav-number">2.6.4.</span> <span class="nav-text">内部表与外部表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sql%E8%BD%AC%E6%8D%A2%E4%B8%BAmr%E4%BB%BB%E5%8A%A1%E7%9A%84%E6%B5%81%E7%A8%8B"><span class="nav-number">2.6.5.</span> <span class="nav-text">sql转换为mr任务的流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89UDF%E5%87%BD%E6%95%B0"><span class="nav-number">2.6.6.</span> <span class="nav-text">自定义UDF函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96-5"><span class="nav-number">2.6.7.</span> <span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%83%E6%95%B0%E6%8D%AE"><span class="nav-number">2.6.7.1.</span> <span class="nav-text">元数据</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E4%BB%93%E7%90%86%E8%AE%BA"><span class="nav-number">2.7.</span> <span class="nav-text">数仓理论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E5%B1%82%E7%9A%84%E6%84%8F%E4%B9%89-%E5%9B%9B%E4%B8%AA"><span class="nav-number">2.7.1.</span> <span class="nav-text">分层的意义 四个</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E5%B1%82%E7%BB%93%E6%9E%84"><span class="nav-number">2.7.2.</span> <span class="nav-text">分层结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E6%A8%A1%E5%9E%8B%E4%BB%8B%E7%BB%8D-%E4%B8%A4%E4%B8%AA"><span class="nav-number">2.7.3.</span> <span class="nav-text">常见模型介绍 两个</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%98%9F%E5%9E%8B%E6%A8%A1%E5%9E%8B"><span class="nav-number">2.7.3.1.</span> <span class="nav-text">星型模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9B%AA%E8%8A%B1%E6%A8%A1%E5%9E%8B"><span class="nav-number">2.7.3.2.</span> <span class="nav-text">雪花模型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BB%BA%E6%A8%A1%E6%B5%81%E7%A8%8B"><span class="nav-number">2.7.4.</span> <span class="nav-text">建模流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8B%E5%AE%9E%E8%A1%A8-and-%E7%BB%B4%E5%BA%A6%E8%A1%A8"><span class="nav-number">2.7.5.</span> <span class="nav-text">事实表 and 维度表</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux"><span class="nav-number">2.8.</span> <span class="nav-text">Linux</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="nav-number">2.8.1.</span> <span class="nav-text">常用命令</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java"><span class="nav-number">3.</span> <span class="nav-text">Java</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1"><span class="nav-number">3.1.</span> <span class="nav-text">类和对象</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B1%BB%EF%BC%88class%EF%BC%89"><span class="nav-number">3.1.1.</span> <span class="nav-text">类（class）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B6%85%E7%B1%BB"><span class="nav-number">3.1.2.</span> <span class="nav-text">超类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%90%E7%B1%BB"><span class="nav-number">3.1.3.</span> <span class="nav-text">子类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9%E8%B1%A1"><span class="nav-number">3.1.4.</span> <span class="nav-text">对象</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E6%B3%A8%E6%84%8F"><span class="nav-number">3.1.4.0.0.1.</span> <span class="nav-text">注意</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9%E8%B1%A1%E5%8F%98%E9%87%8F"><span class="nav-number">3.1.5.</span> <span class="nav-text">对象变量</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%AE%9E%E4%BE%8B-1"><span class="nav-number">3.1.5.0.0.1.</span> <span class="nav-text">实例</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%A5%E5%8F%A3%EF%BC%88interface%EF%BC%89"><span class="nav-number">3.1.6.</span> <span class="nav-text">接口（interface）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%85%E9%83%A8%E7%B1%BB%EF%BC%88inner-class%EF%BC%89"><span class="nav-number">3.1.7.</span> <span class="nav-text">内部类（inner class）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8C%BF%E5%90%8D%E5%86%85%E9%83%A8%E7%B1%BB"><span class="nav-number">3.1.7.1.</span> <span class="nav-text">匿名内部类</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%92%8C%E6%99%AE%E9%80%9A%E7%B1%BB%E5%AF%B9%E6%AF%94"><span class="nav-number">3.1.7.1.1.</span> <span class="nav-text">和普通类对比</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%A7%E6%89%BF"><span class="nav-number">3.1.8.</span> <span class="nav-text">继承</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9D%99%E6%80%81%E4%B8%8E%E9%9D%9E%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95"><span class="nav-number">3.1.9.</span> <span class="nav-text">静态与非静态方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95"><span class="nav-number">3.1.9.1.</span> <span class="nav-text">静态方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9D%9E%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95"><span class="nav-number">3.1.9.2.</span> <span class="nav-text">非静态方法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">3.1.10.</span> <span class="nav-text">运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88OOP%EF%BC%89"><span class="nav-number">3.1.11.</span> <span class="nav-text">面向对象程序设计（OOP）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%81%E8%A3%85%EF%BC%88%E6%9C%89%E6%97%B6%E7%A7%B0%E4%B8%BA%E6%95%B0%E6%8D%AE%E9%9A%90%E8%97%8F%EF%BC%89"><span class="nav-number">3.1.12.</span> <span class="nav-text">封装（有时称为数据隐藏）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E9%94%AE%E5%AD%97"><span class="nav-number">3.1.13.</span> <span class="nav-text">关键字</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#private"><span class="nav-number">3.1.13.1.</span> <span class="nav-text">private</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#public"><span class="nav-number">3.1.13.2.</span> <span class="nav-text">public</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#this"><span class="nav-number">3.1.13.3.</span> <span class="nav-text">this</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9A%90%E5%BC%8F%E5%8F%82%E6%95%B0-and-%E6%98%BE%E5%BC%8F%E5%8F%82%E6%95%B0"><span class="nav-number">3.1.14.</span> <span class="nav-text">隐式参数 and 显式参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%BD%9C%E8%A7%84%E5%88%99"><span class="nav-number">3.1.15.</span> <span class="nav-text">潜规则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%EF%BC%88method%EF%BC%89"><span class="nav-number">3.1.16.</span> <span class="nav-text">方法（method）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9E%84%E9%80%A0%E5%99%A8%EF%BC%88constructor%EF%BC%89"><span class="nav-number">3.1.17.</span> <span class="nav-text">构造器（constructor）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%EF%BC%88SQL%EF%BC%89"><span class="nav-number">4.</span> <span class="nav-text">数据库（SQL）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E7%B1%BB"><span class="nav-number">4.1.</span> <span class="nav-text">分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%BD%E8%A1%A8-and-%E7%AA%84%E8%A1%A8"><span class="nav-number">4.2.</span> <span class="nav-text">宽表 and 窄表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BB%E8%A1%A8-and-%E4%BB%8E%E8%A1%A8"><span class="nav-number">4.3.</span> <span class="nav-text">主表 and 从表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%96%E9%94%AE"><span class="nav-number">4.4.</span> <span class="nav-text">外键</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BB%E9%94%AE"><span class="nav-number">4.5.</span> <span class="nav-text">主键</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E5%8F%A5"><span class="nav-number">4.6.</span> <span class="nav-text">语句</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80"><span class="nav-number">5.</span> <span class="nav-text">计算机基础</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84and%E7%AE%97%E6%B3%95"><span class="nav-number">6.</span> <span class="nav-text">数据结构and算法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="nav-number">6.1.</span> <span class="nav-text">数据结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E7%BB%84"><span class="nav-number">6.2.</span> <span class="nav-text">数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%93%BE%E8%A1%A8"><span class="nav-number">6.3.</span> <span class="nav-text">链表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%88"><span class="nav-number">6.4.</span> <span class="nav-text">栈</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%98%9F%E5%88%97"><span class="nav-number">6.5.</span> <span class="nav-text">队列</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="nav-number">6.6.</span> <span class="nav-text">二叉树</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%97%E8%A1%A8%EF%BC%88list%EF%BC%89"><span class="nav-number">6.7.</span> <span class="nav-text">列表（list）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%BE"><span class="nav-number">6.8.</span> <span class="nav-text">图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A0%86"><span class="nav-number">6.9.</span> <span class="nav-text">堆</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%93%88%E5%B8%8C%E8%A1%A8"><span class="nav-number">6.10.</span> <span class="nav-text">哈希表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%97%E6%B3%95"><span class="nav-number">6.11.</span> <span class="nav-text">算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92"><span class="nav-number">6.12.</span> <span class="nav-text">动态规划</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%92%E5%BD%92"><span class="nav-number">6.13.</span> <span class="nav-text">递归</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B4%AA%E5%BF%83"><span class="nav-number">6.14.</span> <span class="nav-text">贪心</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%90%9C%E7%B4%A2"><span class="nav-number">6.15.</span> <span class="nav-text">搜索</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E6%B2%BB"><span class="nav-number">6.16.</span> <span class="nav-text">分治</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9E%E6%BA%AF"><span class="nav-number">6.17.</span> <span class="nav-text">回溯</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%92%E5%BA%8F"><span class="nav-number">6.18.</span> <span class="nav-text">排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%97%B6%E7%A9%BA%E5%A4%8D%E6%9D%82%E5%BA%A6"><span class="nav-number">6.19.</span> <span class="nav-text">时空复杂度</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6"><span class="nav-number">6.19.1.</span> <span class="nav-text">时间复杂度</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6"><span class="nav-number">6.20.</span> <span class="nav-text">空间复杂度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-number">6.21.</span> <span class="nav-text">数学基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">6.22.</span> <span class="nav-text">基本数据类型</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">xs</p>
+  <div class="site-description" itemprop="description">上市时晋级赛</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/02/05/%E6%96%87%E6%A1%A3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="xs">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="徐苏的博客">
+      <meta itemprop="description" content="上市时晋级赛">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="简历 | 徐苏的博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          简历
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-02-05 21:26:25" itemprop="dateCreated datePublished" datetime="2024-02-05T21:26:25+08:00">2024-02-05</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-05-25 18:39:45" itemprop="dateModified" datetime="2024-05-25T18:39:45+08:00">2024-05-25</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h1 id="简历相关"><a href="#简历相关" class="headerlink" title="简历相关"></a>简历相关</h1><h2 id="自我介绍"><a href="#自我介绍" class="headerlink" title="自我介绍"></a>自我介绍</h2><p>面试官您好，我叫徐苏。今天应聘的岗位是大数据开发工程师。</p>
+<p>目前有三年的工作经验。</p>
+<p>在以往的工作中我参与过多个大数据相关的项目，最近做的一个项目中主要负责使用Spark进行业务指标计算（如用户session访问时长、Top10热门等）、利用SparkStreaming实现实时动态黑名单机制、实时统计每天个城市广告点击次数等等。</p>
+<p>技术方面我熟练使用Spark SQL、Spark Streaming等进行开发、了解Hadoop工作原理、HDFS的读写机制、MapReduce的运行机制、Yarn的资源调度机制等等，有着较为丰富的大数据开发经验。</p>
+<p>以上是我简单的个人介绍，如果有需要我可以对我的项目经历或工作经历展开描述。</p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><h3 id="离线项目"><a href="#离线项目" class="headerlink" title="离线项目"></a>离线项目</h3><h4 id="简述项目内容"><a href="#简述项目内容" class="headerlink" title="简述项目内容"></a>简述项目内容</h4><ol>
+<li>采集<ol>
+<li>前端用户埋点的用户行为数据</li>
+<li>后端产生的业务数据</li>
+<li>根据公司业务需求采取的爬虫数据</li>
+</ol>
+</li>
+<li>使用三类数据进行数据仓库建模</li>
+<li>对数据ETL再分层进行数据处理分析</li>
+</ol>
+<h4 id="整个项目做了什么"><a href="#整个项目做了什么" class="headerlink" title="整个项目做了什么"></a>整个项目做了什么</h4><p>1.搭建Hadoop集群，用于数据的存储，搭建hadoopHA热备<br>2.搭建Zookeeper集群，用于辅助其他大数据组件<br>3.搭建采集Flume，使用自定义过滤器，过滤掉脏数据（不完整的），使用自定义分类将不同的信息传递到不同的KafkaTopic中<br>4.搭建Kafka集群<br>5.搭建消费Kafka数据的Flume，将不同的topic中的数据上传至不同的目录中<br>6.搭建Hive集群，使用MySQL做元数据存储，将Hive的计算引擎换为Tez<br>7.将原始数据加载到Hive中，对原始数据进行ETL分层处理，分为ODS，DWD，DWS，ADS四层<br>8.根据原始数据做不同的需求，如日活，沉默用户，回流用户，最近7天内连续三天活跃用户等等需求，构建用户的行为数仓<br>9.将MySQL中的数据使用大数据开发面试&#x2F;知识点&#x2F;技术点&#x2F;Sqoop导入到Hive中,根据原始数据做不同的需求,如GMV,转化率,用户新鲜度,漏斗分析,品牌复购率等等需求,构建业务数仓<br>10.使用Azkaban对每日新数据做全流程自动处理任务<br>11.搭建Presto,Druid即席查询数仓,用于应对公司的业务</p>
+<h4 id="做了什么"><a href="#做了什么" class="headerlink" title="做了什么"></a>做了什么</h4><p>1.与相关部门沟通，了解项目需求，参与需求分析，并根据业务需求进行数据建模和分层。<br>2.用Sqoop将数据从源系统清洗、转换、加载到ODS层；<br>3.使用hive完成主要的查询、统计等功能，使用hql进行指标分析：<br>例如如日活，沉默用户，回流用户，最近 7 天内连续三天活 跃用户等等需求；<br>4.根据业务部的需求，通过SuperSet实现报表可视化设计及开发。</p>
+<h4 id="技术难点"><a href="#技术难点" class="headerlink" title="技术难点"></a>技术难点</h4><p>hive没办法创建分区了。重启了多次，都没有效果。后来发现namenode也一直出现故障。</p>
+<p>解决方案</p>
+<p>最终，锁定一个参数配置dfs.namenode.handler.count。如果该值设的太小，明显的状况就是DataNode在连接NameNode的时候总是超时或者连接被拒绝,后来本地的维护人员将这个值调到了4000,也就是说，配置了一个线程池，可以容纳4000个线程，这样在消息通信时，这里容纳的信息量就是非常庞大的，最终造成了OOM。因此这个值可以放大，但是不能加的过大。最终,按照dfs.namenode.handler.count&#x3D;20 * log2(Cluster Size)这个公式配了50个线程则解决了这个问题</p>
+<p>MR造成系统宕机</p>
+<p>解决方案：  </p>
+<p>控制Yarn同时运行的任务数，和每个任务申请的最大内存</p>
+<p>写入文件过量造成NameNode宕机<br>解决方案：调高Kafka的存储大小，控制从Kafka到HDFS的写入速度。高峰期的时候用Kafka进行缓存，高峰期过去数据同步会自动跟上。</p>
+<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><h5 id="项目组织架构"><a href="#项目组织架构" class="headerlink" title="项目组织架构"></a>项目组织架构</h5><p>我属于研发部,技术总监下面有各个项目组,我们数据大数据组,其他还有后端项目组，前端组、测试组等。总监上面就是副总等级别了。其他的还有产品运营部等。</p>
+<p>我在部分属于是中级开发工程师,我们公司职级分初级,中级,高级,我们公司的晋升级别按照公司的效益以及岗位空缺来分的</p>
+<p>我们项目组有7个人,一个组长,两个实数,四个离线,我只要是负责做离线的</p>
+<h5 id="框架版本"><a href="#框架版本" class="headerlink" title="框架版本"></a>框架版本</h5><p>我们公司用的是CHD版本5.12.1的框架<br>    hadoop 2.6.0<br>    Spark 1.6.0<br>    Flume 1.6.0<br>    Hive 1.1.0<br>    Sqoop 1.4.6<br>    Oozie 4.1.0<br>    Zookeeper 3.4.5<br>    Impala 2.9.0<br>我自己搭建了也有测试环境的Apache版本的框架<br>    Hadoop 2.7.2<br>    Flume 1.7.0<br>    Kafka 0.11.0.2<br>    KafkaManage 1.3.3.22<br>    Hive 1.2.1<br>    Sqoop 1.4.6<br>    Mysql 5.6.24<br>    Azkaban 2.5.0<br>    Java 1.8<br>    Zookeeper 3.4.10<br>    Presto 0.189</p>
+<h5 id="项目数据量"><a href="#项目数据量" class="headerlink" title="项目数据量"></a>项目数据量</h5><p>用户行为数据:日增量100G左右<br>业务数据:日增量10G左右</p>
+<h5 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h5><p>机器数量:10台惠普2U服务器<br>    机器配置:128G内存 + 20核物理CPU + 40线程 + 8THDD + 2TSSD</p>
+<h5 id="使用到的技术"><a href="#使用到的技术" class="headerlink" title="使用到的技术"></a>使用到的技术</h5><ol>
+<li>hadoop</li>
+<li>zookeeper  1</li>
+<li>flume</li>
+<li>kafka</li>
+<li>hive</li>
+<li>sqoop</li>
+<li>Mysql</li>
+<li>数仓  1</li>
+</ol>
+<h3 id="实时项目"><a href="#实时项目" class="headerlink" title="实时项目"></a>实时项目</h3><h4 id="简述项目内容-1"><a href="#简述项目内容-1" class="headerlink" title="简述项目内容"></a>简述项目内容</h4><p>该平台通过获取网站浏览行为，进行用户分析、轨迹分析、热门购买保险分析等，将结果进行可视化展示，辅助产品经理、市场部同事分析现有产品情况，以及调整公司战略和业务，提高公司业绩。</p>
+<h4 id="做了什么-1"><a href="#做了什么-1" class="headerlink" title="做了什么"></a>做了什么</h4><ul>
+<li>利用Spark读取Hive表数据进行业务指标计算，如用户访问session访问时长、Top10热门保险等，并将结果存储到MySQL中，进行shuffle算子调优</li>
+<li>利用SparkStreaming实现实时动态黑名单机制</li>
+<li>实时统计每天各城市广告点击次数</li>
+</ul>
+<h4 id="四个核心怎么做的"><a href="#四个核心怎么做的" class="headerlink" title="四个核心怎么做的"></a>四个核心怎么做的</h4><h5 id="用户session访问时长的计算"><a href="#用户session访问时长的计算" class="headerlink" title="用户session访问时长的计算"></a>用户session访问时长的计算</h5><ol>
+<li>基于session粒度进行数据聚合<ul>
+<li>聚合原因<br>  因为用户的筛选条件比较多，如日期，性别，搜索关键词等数据都是不同维度的，不统一维度的话，会导致全表搜索</li>
+<li>聚合过程<ol>
+<li>基于session聚合<ol>
+<li>利用mapPartitionsToPair算法获得sessionId 与action的tuple RDD</li>
+<li>利用groupByKey 算子，聚合同一seesion的信息如点击、购买、收藏、搜索、访问时长用 | 分割统计出来拼接在一个字符串中</li>
+<li>利用mapToPair 算子将其构造出userId为key，value为拼接的session信息的tuple，用mapToPair的原因是下一步中需要聚合user信息，因此用userId作为key</li>
+</ol>
+</li>
+<li>聚合user信息<ul>
+<li>为了将用户搜索信息拼接，需要用上一步中得出的userId2SessionInfo join user 信息，这一步可能会出现数据倾斜，适合用map join 替换掉 reduce join，也就是将user信息作为广播变量广播出去，然后在利用userId2SessionInfo 在调用mapToPair算子的时候取出广播变量的值进行聚合user信息。</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>聚合结果<ul>
+<li>用户需要的搜索条件都被拼接在一起</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>自定义accumulator实现session访问时长统计<ul>
+<li>利用filter算子先进行用户筛选条件的过滤</li>
+<li>自定义原因<ul>
+<li>为了进行统计session，累加不同节点上同session时长的信息，就必须有共享变量，也就是使用自定义accumulator</li>
+</ul>
+</li>
+<li>为什么不用传统方式<ul>
+<li>accmulator太多，不便于维护<ol>
+<li>可能累加错</li>
+<li>项目逻辑变更时，维护成本太高</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>我的方式<ul>
+<li>自定义一个accmulator，而不是用传统的几十个</li>
+</ul>
+</li>
+<li>注意<ul>
+<li>在将accumulator统计的session时长写入mysql中，必须有1个action操作在前，不然任务不会被触发</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h5 id="Top10热门的计算"><a href="#Top10热门的计算" class="headerlink" title="Top10热门的计算"></a>Top10热门的计算</h5><ul>
+<li>实现目的<ul>
+<li>根据用户筛选的session根据点击、收藏、搜索次数来计算top10的热门保险，要求的是先比较点击次数再比较收藏次数最后比较搜索次数来降序排序（需要自定义sortKey）</li>
+</ul>
+</li>
+<li>实现流程<ol>
+<li>首先自定义了车型排序key类实现Orderd接口，重写compare 、less、greater等方法</li>
+<li>将筛选的session 与session明细进行join，获取符合条件的session明细信息</li>
+<li>将上一步中获取的session 明细利用flatMapToPair算子获得被点击、收藏、搜索的车型Id tuple，然后将session明细利用filter 算子分别统计点击、收藏、搜索车型的次数。然后获取的车型Id tuple 与 计算出来的车型点击、收藏、搜索次数进行left join 操作，将点击，收藏、搜索次数作为拼接为String，形成了车型Id 对应点击、收藏、搜索次数的tuple</li>
+<li>将上一步中形成的tuple RDD 利用mapToPair算子将点击、收藏、搜索次数提取出来映射成自定义的排序key，value为统计的信息</li>
+<li>利用sortBykey进行排序在利用take算子取出top10 车型</li>
+</ol>
+</li>
+<li>重点内容<ul>
+<li>自定义sortKey</li>
+</ul>
+</li>
+</ul>
+<h5 id="实时动态黑名单机制"><a href="#实时动态黑名单机制" class="headerlink" title="实时动态黑名单机制"></a>实时动态黑名单机制</h5><ul>
+<li>黑名单用户的判定规则<ul>
+<li>每天某个用户对某个广告的点击次数超过100</li>
+</ul>
+</li>
+<li>与kafka的集成方式<ul>
+<li>direct方式</li>
+</ul>
+</li>
+<li>实现流程<br>  利用的是SparkingStreaming消费kafka中的数据进行实现动态黑名单机制，与Kafka的集成是使用的Direct方式，每个batch的间隔事件是5s，数据格式是timestamp province city userId adId.<ol>
+<li>将传过来的用户广告点击日志利用mapToPair算子进行解析成 date+userid+adid 为key的形式，计数为1，然后再利用reduceByKey算子统计出每个batch中对应每天用户对特定广告的点击次数</li>
+<li>对上一步中统计出来的每天用户对特定广告的点击次数利用foreachRDD算子进行写入Mysql 持久化用户点击次数</li>
+<li>利用filter算子对batch中的记录都拿出来date user，adid 去Mysql中的用户点击次数表中查询出来响应的点击次数，取出点击次数大于100的记录。</li>
+<li>对filter出来的黑名单用户进行userId的整个RDD的全局去重，然后再写入Mysql中的黑名单用户表。到这里就实现了动态黑名单用户表，黑名单用户是实时增加的，基于上述计算出来的动态黑名单，在最一开始，就对每个batch中的点击行为根据动态黑名单进行过滤。</li>
+</ol>
+</li>
+</ul>
+<h5 id="实时统计每天各城市广告点击率"><a href="#实时统计每天各城市广告点击率" class="headerlink" title="实时统计每天各城市广告点击率"></a>实时统计每天各城市广告点击率</h5><ul>
+<li>实现流程<ol>
+<li>拿到经过过滤的用户点击数据</li>
+<li>利用mapToPair算子转换成key为date+province+adId的字符串value为1L的DStream</li>
+<li>利用updateStateByKey算子统计累计到当前时刻每天个城市广告的点击率</li>
+<li>updateStateByKey 算子维护了之前批次的同一个key的计数累计值</li>
+</ol>
+</li>
+</ul>
+<h4 id="技术难点-1"><a href="#技术难点-1" class="headerlink" title="技术难点"></a>技术难点</h4><ol>
+<li>实现自定义Accumulator</li>
+<li>实现自定义排序Key</li>
+<li>解决Spark数据倾斜问题</li>
+</ol>
+<h6 id="一、"><a href="#一、" class="headerlink" title="一、"></a>一、</h6><p>自定义原因</p>
+<p>Accumulator是运行再Driver端上了，内部维护了一个叫value的private变量，用来对作业执行过程中一些事件的统计。但是默认的只能对某一事件每次进行+1操作，也不能进行复杂的运算<br>如果采用默认Accumulator的做法是可以对不同的session时长都定义一个Accumulator来计算统计对应个数，但是这样会造成项目中大量的Accumulator存在不便维护，因此需要自定义Accumulator。</p>
+<p>实现流程</p>
+<p>实现AccumulatorParam接口，重写了Zero方法，初始的值是字符串，格式是key &#x3D;value的形式，并且每个值用 | 分割，重写了addInplace方法和addAccumulator方法，两个方法内部调用逻辑是一样的，获取到传入的key，根据传入的key利用String split方法将对应的旧值拿出来转换成int类型之后+1然后拼接回去形成新的值给回到Accumulator，相当于改写成功了。</p>
+<h6 id="二、"><a href="#二、" class="headerlink" title="二、"></a>二、</h6><p>自定义原因</p>
+<p>sortByKey算子，默认情况下，它支持根据int、long等类型来进行排序，但是那样的话，key就只能放一个字段了所以需要自定义key，作为sortByKey算子的key，自定义key中，封装n个字段，并在key中，自己在指定接口方法中，实现自己的根据多字段的排序算法然后再使用sortByKey算子进行排序，那么就可以按照我们自己的key，使用多个字段进行排序</p>
+<h5 id="技术架构"><a href="#技术架构" class="headerlink" title="技术架构"></a>技术架构</h5><p>Flume+Kafka+Hadoop+Hive+Sqoop+Spark+Zookeeper+Mysql</p>
+<p>与数仓项目不同的是</p>
+<ol>
+<li>java编程</li>
+<li>spark</li>
+</ol>
+<h4 id="一些概念"><a href="#一些概念" class="headerlink" title="一些概念"></a>一些概念</h4><ul>
+<li>用户访问session</li>
+</ul>
+<p>在Spark实时项目中，用户访问 session 通常指</p>
+<p>用户在网站或应用中的一系列操作，这些操作在一段时间内被认为是一个连续的访问会话。会话一般是从用户进入网站或应用开始，到用户离开为止的一段时间范围。</p>
+<p>用户访问 session 可以包括多个页面浏览、点击、搜索等行为。会话的定义通常基于一些时间间隔或用户活动的规则，比如一段时间内没有用户操作就认为会话结束。这个时间间隔可以根据具体项目的需求来定义。<br>在实时项目中，使用Spark Streaming等流处理框架来处理用户访问 session 数据是很常见的。通过实时处理，可以及时了解用户的行为，进行个性化推荐、实时分析等。通常，需要使用一些技术手段来识别和跟踪用户的 session，比如使用用户的ID或在用户访问时生成的会话标识符。<br>总的来说，用户访问 session 在实时项目中是一个时间上连续的用户操作序列，通过对这些操作进行处理和分析，可以从中获取有关用户行为的有用信息。</p>
+<h3 id="其他-1"><a href="#其他-1" class="headerlink" title="其他"></a>其他</h3><h4 id="为什么离职"><a href="#为什么离职" class="headerlink" title="为什么离职"></a>为什么离职</h4><ul>
+<li>想在技术上得到更多的锻炼</li>
+</ul>
+<h4 id="对项目可以怎么介绍"><a href="#对项目可以怎么介绍" class="headerlink" title="对项目可以怎么介绍"></a>对项目可以怎么介绍</h4><ol>
+<li>简述项目内容</li>
+<li>做了什么</li>
+<li>使用到了哪些技术？（准备相关技术知识点）</li>
+<li>是否解决过什么问题？怎么解决的？</li>
+</ol>
+<h1 id="八股文相关"><a href="#八股文相关" class="headerlink" title="八股文相关"></a>八股文相关</h1><h2 id="Hadoop"><a href="#Hadoop" class="headerlink" title="Hadoop"></a>Hadoop</h2><h3 id="是什么"><a href="#是什么" class="headerlink" title="是什么"></a>是什么</h3><p>分布式大数据计算和存储框架<br>广义上指一个生态圈</p>
+<h3 id="hdfs流程"><a href="#hdfs流程" class="headerlink" title="hdfs流程"></a>hdfs流程</h3><blockquote>
+<p>分布式文件系统（Hadoop Distributed File System）</p>
+</blockquote>
+<ul>
+<li>读流程<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423155207.png" alt="image.png"></li>
+</ul>
+<ol>
+<li>client查询元数据<ul>
+<li>访问namenode，获得文件数据块位置列表，返回到输入流对象</li>
+</ul>
+</li>
+<li>就近挑一台datanode服务器，请求建立建立输入流</li>
+<li>datanode向输入流中写数据，以packet为单位校验</li>
+<li>关闭输入流</li>
+</ol>
+<ul>
+<li>写流程<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423155645.png" alt="image.png"></li>
+</ul>
+<ol>
+<li>client向namenode发出写文件请求</li>
+<li>检查是否已存在文件、检查权限，若通过检查，先将操作写入editlog，并返回输出流对象<ul>
+<li>editlog记录的是最新的HDFS客户端执行的所有写操作，如果后续实际写操作失败了，也会有记录，不用担心后续client读不到相应数据块</li>
+<li>第5步中datanode收到块后会返回确认信息，若发送端收不到确认信息，会一直重试，直到成功</li>
+</ul>
+</li>
+<li>client端按照128MB切分文件</li>
+<li>client将namenode返回的分配可写的datanode列表和data数据一同发送给最近的第一个datanode节点，此后client端和namenode分配的多个datanode组成pipeline管道，client端向输出流对象中写数据<ul>
+<li>client每向第一个datanode写入一个packet，这个packet便会直接在pipeline中传给第二个第三个…datanode（并不是写完一个block块或一整个文件后才发）</li>
+</ul>
+</li>
+<li>每个datanode写完一个block块后，返回确认信息</li>
+<li>写完数据关闭输出流</li>
+<li>发送完成信号给namenode<ul>
+<li>发送信号时机取决于集群是<ul>
+<li>强一致性（一般是）：所有datanode写完，向namenode汇报</li>
+<li>最终一致性：任意一个datanode写完，单独向namenode汇报</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>block<ul>
+<li>最大</li>
+<li>文件上传前分的块</li>
+<li>一般128MB（可以改，不推荐）<ul>
+<li>块太大：Map任务数少，执行速度变慢</li>
+<li>块太小：寻址时间占比过高</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>packet<ul>
+<li>第二大</li>
+<li>client向datanode、datanode的pipeline之间 传数据 的基本单位</li>
+<li>默认64KB</li>
+</ul>
+</li>
+<li>chunk<ul>
+<li>最小</li>
+<li>client向datanode、datanode的pipeline之间 数据校验 的基本单位</li>
+<li>默认512Byte</li>
+<li>实际516Byte（512+4Byte校验位）</li>
+</ul>
+</li>
+</ul>
+<h3 id="mapreduce流程"><a href="#mapreduce流程" class="headerlink" title="mapreduce流程"></a>mapreduce流程</h3><ol>
+<li>map阶段（映射）</li>
+<li>shuffle阶段（派发）</li>
+<li>reduce阶段（缩减）</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/2%E3%80%81%E6%B4%BE%E5%8F%91%EF%BC%88shuffle%EF%BC%89%EF%BC%9A%E5%B0%86key%E7%9B%B8%E5%90%8C%E7%9A%84%E9%94%AE%E5%80%BC%E5%AF%B9%E6%94%BE%E5%88%B0%E4%B8%80%E5%9D%97%E5%8E%BB%E3%80%82.png" alt="2、派发（shuffle）：将key相同的键值对放到一块去。.png"></p>
+<h3 id="yarn流程"><a href="#yarn流程" class="headerlink" title="yarn流程"></a>yarn流程</h3><p>可回答：1）YARN的任务提交流程；2）YARN的通信流程或工作流程；3）YARN执行一个application的流 程；4）Hadoop任务的YARN调度过程；5）YARN上提交资源（程序）的流程；6）YARN的资源调度流程；7）YARN的任务提交流程</p>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240426214430.png" alt="image.png"></p>
+<p>1）MapReduce程序提交到客户端所在的节点。<br>2）YarnRunner向ResourceManager申请一个Application。<br>3）RM 将该应用程序的资源路径以及application_id返回给YarnRunner。<br>4）该程序将运行所需资源提交到 HDFS 上。<br>5）程序资源提交完毕后，申请运行 mrAppMaster。<br>6）RM 将用户的请求初始化成一个 Task。<br>7）其中一个NodeManager 领取到 Task 任务。<br>8）该 NodeManager 创建容器 Container，并产生 MRAppmaster。<br>9）Container 从HDFS 上拷贝资源到本地。<br>10）MRAppmaster 向RM 申请运行 MapTask 资源。<br>11）RM 将运行 MapTask 任务分配给另外两个 NodeManager，另两个 NodeManager 分别领取任务并创建容器。<br>12）MR 向两个接收到任务的NodeManager 发送程序启动脚本，这两个 NodeManager分别启动MapTask，MapTask 对数据分区排序。<br>13）MrAppMaster 等待所有 MapTask 运行完毕后，向 RM 申请容器，运行 ReduceTask。<br>14）ReduceTask 向 MapTask 获取相应分区的数据。<br>15）程序运行完毕后，MR 会向 RM 申请注销自己。</p>
+<h3 id="常用端口号-三个"><a href="#常用端口号-三个" class="headerlink" title="常用端口号 三个"></a>常用端口号 三个</h3><p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423090349.png" alt="image.png"></p>
+<h3 id="核心配置文件-两个"><a href="#核心配置文件-两个" class="headerlink" title="核心配置文件 两个"></a>核心配置文件 两个</h3><ul>
+<li>hdfs-site.xml：HDFS相关配置</li>
+<li>mapred-site.xml：MapReduce相关配置</li>
+</ul>
+<h3 id="简单集群搭建流程"><a href="#简单集群搭建流程" class="headerlink" title="简单集群搭建流程"></a>简单集群搭建流程</h3><ol>
+<li>JDK安装</li>
+<li>配置SSH免密登录</li>
+<li>配置hadoop核心文件</li>
+<li>格式化namenode</li>
+</ol>
+<h3 id="hadoop与spark以后各负责什么"><a href="#hadoop与spark以后各负责什么" class="headerlink" title="hadoop与spark以后各负责什么"></a>hadoop与spark以后各负责什么</h3><ul>
+<li>Spark主要用于<ul>
+<li>计算</li>
+</ul>
+</li>
+<li>Hadoop主要用于<ul>
+<li>存储（比如HDFS、Hive，HBase等）</li>
+<li>资源调度（Yarn）。</li>
+</ul>
+</li>
+</ul>
+<p>Spark是Hadoop生态圈的重要一员</p>
+<h2 id="Spark"><a href="#Spark" class="headerlink" title="Spark"></a>Spark</h2><h3 id="是什么-1"><a href="#是什么-1" class="headerlink" title="是什么"></a>是什么</h3><blockquote>
+<p>分布式大数据计算引擎</p>
+</blockquote>
+<blockquote>
+<p>scala实现<br>基于内存计算</p>
+</blockquote>
+<h3 id="五个组成部分"><a href="#五个组成部分" class="headerlink" title="五个组成部分"></a>五个组成部分</h3><p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423090436.png" alt="image.png"></p>
+<ol>
+<li>Spark Core<ul>
+<li>核心组件，提供RDD计算模型</li>
+</ul>
+</li>
+<li>Spark SQL<ul>
+<li>查询计算（交互式查询），处理结构化数据</li>
+</ul>
+</li>
+<li>Spark Streaming<ul>
+<li>处理实时数据流</li>
+</ul>
+</li>
+<li>Spark MLlib<ul>
+<li>机器学习库</li>
+</ul>
+</li>
+<li>Spark Graphx<ul>
+<li>图形处理模块</li>
+</ul>
+</li>
+</ol>
+<h3 id="计算触发时机"><a href="#计算触发时机" class="headerlink" title="计算触发时机"></a>计算触发时机</h3><p>RDD的action操作</p>
+<p>action之前的transformation，只是记录RDD生成的轨迹，并不会触发计算</p>
+<h3 id="快速的主要原因"><a href="#快速的主要原因" class="headerlink" title="快速的主要原因"></a>快速的主要原因</h3><p>基于内存计算</p>
+<h3 id="工作流程及相关组件"><a href="#工作流程及相关组件" class="headerlink" title="工作流程及相关组件"></a>工作流程及相关组件</h3><p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423090444.png" alt="image.png"></p>
+<ol>
+<li>客户端提交任务，创建Driver进程并初始化SparkContext</li>
+<li>SparkContext向Cluster Manager申请资源</li>
+<li>Cluster Manager选择合适的worker节点创建Executor进程</li>
+<li>Executor向Driver端注册，并等待其分配task任务</li>
+<li>SparkContext构建DAG图(有向无环图)、划分stage并分配taskset至Executor</li>
+<li>Executor启动Task线程执行具体任务</li>
+</ol>
+<ul>
+<li>Master Node<ul>
+<li>主控节点，实际生产环境会有多个Master，只有一个Master处于active状态</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Worker Node<ul>
+<li>工作节点，向Master汇报自身资源、Executor执行状态的改变，并接受Master命令启动Executor或Driver</li>
+</ul>
+</li>
+<li>Driver<ul>
+<li>每个应用程序（包括许多小任务）的控制节点，负责推动小任务的有序执行</li>
+</ul>
+</li>
+<li>Executor<ul>
+<li>工作进程，由Worker监管，负责具体任务的执行</li>
+</ul>
+</li>
+<li>Cluster Manager<ul>
+<li>集群资源管理器</li>
+</ul>
+</li>
+<li>Task<ul>
+<li>被送到某个Executor上的工作单元，多个Task组成一个Stage</li>
+</ul>
+</li>
+<li>Job<ul>
+<li>包含多个Task组成的并行计算，往往由Spark Action触发生成，一个Application中会有多个Job</li>
+</ul>
+</li>
+<li>Stage<ul>
+<li>每个Job会被拆分成多组Task，作为一个TaskSet，其就是一个Stage。Stage的划分和调度由DAGScheduler负责。Stage的边界就是发生shuffle的地方</li>
+</ul>
+</li>
+</ul>
+<img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423090754.png" alt="image.png" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423090818.png" alt="image.png" style="zoom:50%;" />
+
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423090634.png" alt="image.png"></p>
+<p>该模式下</p>
+<ul>
+<li>Master为资源调度器，负责executors资源调度</li>
+<li>Worker负责Executor进程的启动和监控</li>
+<li>Driver在客户端启动，负责SparkContext初始化</li>
+</ul>
+<h3 id="job-stage-task理解"><a href="#job-stage-task理解" class="headerlink" title="job-stage-task理解"></a>job-stage-task理解</h3><ul>
+<li><p>从大到小：Job — Stage — Task（最细的执行单元）</p>
+</li>
+<li><p>Job：</p>
+<ul>
+<li>一个Action算子提交一个job，执行前面的一系列操作</li>
+<li>一个Job包含一个Action和N个Transform操作</li>
+<li>Job之间串行执行</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Stage：<ul>
+<li>根据宽窄依赖关系划分，一个shuffle一个stage</li>
+<li>一个Job有多个算子操作（将父RDD转换成子RDD）<ul>
+<li>两种情况<ul>
+<li>父分裂（宽依赖（shuffle依赖））：划分stage</li>
+<li>父不分裂（窄依赖）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Task：<ul>
+<li>一个Task负责一个RDD分区的数据</li>
+<li>有多少分区就有多少Task</li>
+<li>每个Task执行结果就是生成了目标RDD的一个partition</li>
+<li>在parallelize方法的逗号右边设置的数字（分区数）即task个数（其等于设置的RDD并行度）<br>  <img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423090848.png" alt="image.png|400"></li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423090904.png" alt="image.png"></p>
+<h3 id="运行模式-四个"><a href="#运行模式-四个" class="headerlink" title="运行模式 四个"></a>运行模式 四个</h3><p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423090658.png" alt="image.png|600"></p>
+<ol>
+<li>Local：仅用于本地开发</li>
+<li>Standalone：Spark内置，常用于小型测试集群</li>
+<li>Yarn：常用</li>
+<li>Mesos：国内几乎不用</li>
+</ol>
+<h3 id="yarn-cluster和yarn-client区别"><a href="#yarn-cluster和yarn-client区别" class="headerlink" title="yarn-cluster和yarn-client区别"></a>yarn-cluster和yarn-client区别</h3><ul>
+<li>Yarn Cluster模式<ul>
+<li>Driver进程托管给Yarn(AppMaster)管理，通过Yarn UI或者Yarn logs命令查看日志</li>
+</ul>
+</li>
+<li>Yarn Client模式<ul>
+<li>Driver进程运行在本地客户端，因资源调度、任务分发会和Yarn集群产生大量网络通信，出现网络激增现象</li>
+<li>适合本地调试，不建议生产上使用</li>
+</ul>
+</li>
+</ul>
+<h3 id="提交作业参数"><a href="#提交作业参数" class="headerlink" title="提交作业参数"></a>提交作业参数</h3><p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423090708.png" alt="image.png|500"></p>
+<ul>
+<li>executor-cores —— 每个executor使用的内核数，默认为1</li>
+<li>driver-cores —— driver使用内核数，默认为1</li>
+</ul>
+<ul>
+<li>executor-memory —— executor内存大小，默认1G</li>
+<li>driver-memory —— driver内存大小，默认512M</li>
+<li>num-executors —— 启动executors的数量，默认为2</li>
+</ul>
+<h3 id="解释宽窄依赖"><a href="#解释宽窄依赖" class="headerlink" title="解释宽窄依赖"></a>解释宽窄依赖</h3><p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423090919.png" alt="image.png|700"></p>
+<ul>
+<li>宽依赖（超生）<ul>
+<li>一对多</li>
+<li>需要等待上一阶段运行结果才能继续执行程序</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>窄依赖（独生子女）<ul>
+<li>一对一</li>
+<li>任务可以在内存中的管道上迭代并行运行，无需等待前一阶段结果</li>
+</ul>
+</li>
+</ul>
+<h3 id="什么是shuffle"><a href="#什么是shuffle" class="headerlink" title="什么是shuffle"></a>什么是shuffle</h3><p>重新分区、重新分组<br>将数据从不同分区和结点上移动，进行合并和重新排列</p>
+<h3 id="可能导致shuffle的算子"><a href="#可能导致shuffle的算子" class="headerlink" title="可能导致shuffle的算子"></a>可能导致shuffle的算子</h3><p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423090941.png" alt="image.png"></p>
+<h3 id="常用的算子"><a href="#常用的算子" class="headerlink" title="常用的算子"></a>常用的算子</h3><ul>
+<li><p>mapToPair</p>
+<p>  对RDD中的每个元素都调用f函数<br>  将每个元素都转换成一个&lt;K,V&gt;类型的对象<br>  例如，原hello元素转换为&lt;hello,1&gt;的形式</p>
+</li>
+<li><p>groupByKey</p>
+<p>  相同key的value值放在一起<br>  <img src="https://raw.githubusercontent.com/whisperouo/images/main/20240426222345.png" alt="image.png"><br>  <img src="https://raw.githubusercontent.com/whisperouo/images/main/20240426222352.png" alt="image.png"></p>
+</li>
+<li><p>reduceByKey</p>
+<p>  相同key对value进行聚合（求和）<br>  求和不限于加法和乘法，因为reduce操作可以自定义<br>  <img src="https://raw.githubusercontent.com/whisperouo/images/main/20240426222619.png" alt="image.png"><br>  例如x * y就是一个reduce操作的自定义</p>
+</li>
+</ul>
+<h3 id="学一下（两类算子（并列出常用的））"><a href="#学一下（两类算子（并列出常用的））" class="headerlink" title="学一下（两类算子（并列出常用的））"></a>学一下（两类算子（并列出常用的））</h3><h3 id="如何实现TopN的获取"><a href="#如何实现TopN的获取" class="headerlink" title="如何实现TopN的获取"></a>如何实现TopN的获取</h3><p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423091236.png" alt="image.png"></p>
+<h3 id="数据倾斜"><a href="#数据倾斜" class="headerlink" title="数据倾斜"></a>数据倾斜</h3><h4 id="本质"><a href="#本质" class="headerlink" title="本质"></a>本质</h4><p>某个或某些key对应的数据远远高于其他key</p>
+<h4 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h4><p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240426215018.png" alt="image.png"></p>
+<h4 id="出现原因"><a href="#出现原因" class="headerlink" title="出现原因"></a>出现原因</h4><p>基本是shuffle导致</p>
+<h4 id="可能触发数据倾斜的算子"><a href="#可能触发数据倾斜的算子" class="headerlink" title="可能触发数据倾斜的算子"></a>可能触发数据倾斜的算子</h4><p>可能触发的算子（distinct、groupByKey、reduceByKey、 aggregateByKey、join、cogroup、repartition）</p>
+<h4 id="如何定位"><a href="#如何定位" class="headerlink" title="如何定位"></a>如何定位</h4><ol>
+<li>找找程序中使用的可能产生shuffle的算子</li>
+<li>看log<ul>
+<li>一般会报哪一行代码导致OOM异常</li>
+<li>看看执行到第几个stage<ul>
+<li>哪一个stage的task特别慢，然后定位</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h4 id="解决办法（两个）"><a href="#解决办法（两个）" class="headerlink" title="解决办法（两个）"></a>解决办法（两个）</h4><ol>
+<li>使用Hive ETL预处理数据</li>
+<li>过滤导致倾斜的key</li>
+</ol>
+<p>一、使Hive ETL预处理数据</p>
+<p><strong>方案适用场景</strong>：导致数据倾斜的是Hive表。如果该Hive表中的数据本身很不均匀（比如某个key对应了100万数据，其他key才对应了10条数据），而且业务场景需要频繁使用Spark对Hive表执行某个分析操作，那么比较适合使用这种技术方案。</p>
+<p><strong>方案实现思路</strong>：此时可以评估一下，是否可以通过Hive来进行数据预处理（即通过Hive ETL预先对数据按照key进行聚合，或者是预先和其他表进行join），然后在Spark作业中针对的数据源就不是原来的Hive表了，而是预处理后的Hive表。此时由于数据已经预先进行过聚合或join操作了，那么在Spark作业中也就不需要使用原先的shuffle类算子执行这类操作了。</p>
+<p><strong>方案实现原理</strong>：这种方案从根源上解决了数据倾斜，因为彻底避免了在Spark中执行shuffle类算子，那么肯定就不会有数据倾斜的问题了。但是这里也要提醒一下大家，这种方式属于治标不治本。因为毕竟数据本身就存在分布不均匀的问题，所以Hive ETL中进行group by或者join等shuffle操作时，还是会出现数据倾斜，导致Hive ETL的速度很慢。我们只是把数据倾斜的发生提前到了Hive ETL中，避免Spark程序发生数据倾斜而已。</p>
+<p><strong>方案优点</strong>：实现起来简单便捷，效果还非常好，完全规避掉了数据倾斜，Spark作业的性能会大幅度提升。</p>
+<p><strong>方案缺点</strong>：治标不治本，Hive ETL中还是会发生数据倾斜。</p>
+<p><strong>方案实践经验</strong>：在一些Java系统与Spark结合使用的项目中，会出现Java代码频繁调用Spark作业的场景，而且对Spark作业的执行性能要求很高，就比较适合使用这种方案。将数据倾斜提前到上游的Hive ETL，每天仅执行一次，只有那一次是比较慢的，而之后每次Java调用Spark作业时，执行速度都会很快，能够提供更好的用户体验。</p>
+<p><strong>项目实践经验</strong>：在美团·点评的交互式用户行为分析系统中使用了这种方案，该系统主要是允许用户通过Java Web系统提交数据分析统计任务，后端通过Java提交Spark作业进行数据分析统计。要求Spark作业速度必须要快，尽量在10分钟以内，否则速度太慢，用户体验会很差。所以我们将有些Spark作业的shuffle操作提前到了Hive ETL中，从而让Spark直接使用预处理的Hive中间表，尽可能地减少Spark的shuffle操作，大幅度提升了性能，将部分作业的性能提升了6倍以上。</p>
+<p>二、过滤导致倾斜的key</p>
+<p>业务需求需要能接受某些数据舍弃掉，不使用。</p>
+<p>比如100万个key，只有两个key数据量达到了10万，其他key对应的都是几十，那就抛弃这两个key</p>
+<p>从hive表查数据的时候，直接用where过滤</p>
+<p>我常用的方式</p>
+<p>先看数据倾斜发生在第几个stage中，我使用的yarn-client模式提交，本地可以直接看到log，在log中找到运行到了第几个stage</p>
+<p>如果是用yarn-cluster模式提交，则可以通过Spark Web UI来查看当前运行到了第几个stage。</p>
+<p>无论是使用yarn-client模式还是yarn-cluster模式，我们都可以在Spark Web UI上深入看一下当前这个stage各个task分配的数据量，从而进一步确定是不是task分配的数据不均匀导致了数据倾斜。</p>
+<p>知道数据倾斜发生在哪一个stage之后，接着我就根据stage划分原理，推算出来发生倾斜的那个stage对应代码中的哪一部分，这部分代码中肯定会有一个shuffle类算子。</p>
+<h3 id="其他-2"><a href="#其他-2" class="headerlink" title="其他"></a>其他</h3><h4 id="RDD"><a href="#RDD" class="headerlink" title="RDD"></a>RDD</h4><blockquote>
+<p>弹性分布式数据集（Resilient Distributed Dataset）</p>
+</blockquote>
+<blockquote>
+<p>Spark的基础数据单元<br>只是封装计算逻辑，不保存数据</p>
+</blockquote>
+<h5 id="RDD分区"><a href="#RDD分区" class="headerlink" title="RDD分区"></a>RDD分区</h5><ul>
+<li>分区对计算效率的影响主要在于CPU的利用率<ul>
+<li>如Spark集群支持100并行度，但RDD分区数只有1，实际无法利用CPU资源，若分区数为100，则其拆解出的计算任务将尽可能地占满集群CPU资源</li>
+</ul>
+</li>
+</ul>
+<h5 id="RDD并行度"><a href="#RDD并行度" class="headerlink" title="RDD并行度"></a>RDD并行度</h5><ul>
+<li>计算集群支持并行计算的任务数量</li>
+<li>通常与集群CPU总核数保持一致</li>
+</ul>
+<h4 id="DAG（有向无环图）"><a href="#DAG（有向无环图）" class="headerlink" title="DAG（有向无环图）"></a>DAG（有向无环图）</h4><p>一个Spark程序可以有多个DAG（几个action，几个DAG）</p>
+<p>一个DAG可以有多个Stage（根据宽依赖&#x2F;shuffle划分）</p>
+<p>一个Stage可以有多个task并行（task数 &#x3D; 分区数）</p>
+<h3 id="一些概念-1"><a href="#一些概念-1" class="headerlink" title="一些概念"></a>一些概念</h3><ul>
+<li>JavaRDD</li>
+<li>spark为java写的一套API</li>
+<li>JavaRDD String：接收对象为string</li>
+<li>SparkContext<ul>
+<li>spark应用程序的入口</li>
+<li>负责与集群通信并管理应用程序的资源</li>
+</ul>
+</li>
+</ul>
+<h2 id="Sqoop"><a href="#Sqoop" class="headerlink" title="Sqoop"></a>Sqoop</h2><h3 id="是什么-2"><a href="#是什么-2" class="headerlink" title="是什么"></a>是什么</h3><blockquote>
+<p>Hadoop和关系型数据库之间传送数据的工具</p>
+</blockquote>
+<blockquote>
+<p>将导入导出命令翻译成MapReduce程序实现，并且不需要reducetask</p>
+</blockquote>
+<h3 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h3><h3 id="sqoop底层运行的任务是什么"><a href="#sqoop底层运行的任务是什么" class="headerlink" title="sqoop底层运行的任务是什么"></a>sqoop底层运行的任务是什么</h3><ul>
+<li>只有Map阶段没有Reduce阶段的MapReduce任务（只是单纯地将数据从一个地方抽取到另一个地方）</li>
+<li>主要是通过MapReduce的InputFormat和OutputFormat来实现数据的输入和输出</li>
+</ul>
+<p>Sqoop使用MapReduce框架来执行数据的导入和导出操作。在导入过程中，Sqoop会将导入任务分解为多个Map任务，每个Map任务负责从源数据库中读取数据的一部分，并将其写入HDFS。没有使用Reduce阶段，因为数据的导入是一个纯粹的数据传输过程，不需要数据聚合或排序。导出过程中，Sqoop读取HDFS中的数据，并将其分配给多个Map任务进行处理，最后写回到关系型数据库中。</p>
+<h3 id="sqoop数据导出一致性问题如何解决"><a href="#sqoop数据导出一致性问题如何解决" class="headerlink" title="sqoop数据导出一致性问题如何解决"></a>sqoop数据导出一致性问题如何解决</h3><p><img src="https://raw.githubusercontent.com/whisperouo/images/main/image-20240519234124064.png" alt="image-20240519234124064"></p>
+<h3 id="sqoop导入导出null存储一致性问题"><a href="#sqoop导入导出null存储一致性问题" class="headerlink" title="sqoop导入导出null存储一致性问题"></a>sqoop导入导出null存储一致性问题</h3><p>null的底层存储形式</p>
+<ul>
+<li>Hive：\N</li>
+<li>MySQL：Null</li>
+</ul>
+<p>- 解决办法</p>
+<p>​	- 转化过程中遇到null-string和null-non-string都转化为指定的类型,将空值以可识别的方式导出</p>
+<p>​		- 导入数据时加参数</p>
+<p>​			- –input-null-string “\N”</p>
+<p>​		  * –input-null-non-string “\N”</p>
+<p>​		- 导出数据时加参数</p>
+<p>​			- –null-string “\N” </p>
+<p>用于指定空字符串的占位符，即将 空字符串 转换为 字符串 ‘\N’</p>
+<p>​		- –null-non-string “\N” </p>
+<p>用于指定非字符串空值的占位符，例如整数、浮点数等，将 空值 转换为 字符串’\N’</p>
+<h3 id="sqoop数据导出一次执行多长时间"><a href="#sqoop数据导出一次执行多长时间" class="headerlink" title="sqoop数据导出一次执行多长时间"></a>sqoop数据导出一次执行多长时间</h3><p>5 分钟-2 个小时的都有。取决于数据量。</p>
+<h2 id="Kafka"><a href="#Kafka" class="headerlink" title="Kafka"></a>Kafka</h2><h3 id="是什么-3"><a href="#是什么-3" class="headerlink" title="是什么"></a>是什么</h3><blockquote>
+<p>分布式消息队列（MQ，Message Queue）\</p>
+</blockquote>
+<blockquote>
+<p>基于发布&#x2F;订阅模式</p>
+</blockquote>
+<blockquote>
+<p>大数据实时领域<br>主要用于处理流式数据</p>
+</blockquote>
+<h3 id="实现了三个目标"><a href="#实现了三个目标" class="headerlink" title="实现了三个目标"></a>实现了三个目标</h3><ul>
+<li><ol>
+<li>解耦和扩展性（项目开始的时候，并不能确定具体需求。消息队列可以作为一个接口层，解耦重要的业务流程。只需要遵守约定，针对数据编程即可获取扩展能力。）</li>
+</ol>
+</li>
+</ul>
+<ol start="2">
+<li>异步通信（很多时候，用户不想也不需要立即处理消息。消息队列提供了异步处理机制，允许用户把一个消息放入队列，但并不立即处理它。想向队列中放入多少消息就放多少，然后在需要的时候再去处理它们。）</li>
+<li>缓冲和削峰（上游数据时有突发流量，下游可能扛不住，或者下游没有足够多的机器来保证冗余，kafka在中间可以起到一个缓冲的作用，把消息暂存在kafka中，下游服务就可以按照自己的节奏进行慢慢处理。）</li>
+</ol>
+<h3 id="相关名词解释-九个"><a href="#相关名词解释-九个" class="headerlink" title="相关名词解释 九个"></a>相关名词解释 九个</h3><p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423093221.png" alt="image.png"></p>
+<h3 id="其他-3"><a href="#其他-3" class="headerlink" title="其他"></a>其他</h3><h4 id="消息队列的两种形式"><a href="#消息队列的两种形式" class="headerlink" title="消息队列的两种形式"></a>消息队列的两种形式</h4><p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423093214.png" alt="image.png"></p>
+<h4 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h4><p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423093231.png" alt="image.png"></p>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423093248.png" alt="image.png"></p>
+<h4 id="Kafka-机器数量-2（峰值生产速度副本数-100）-1"><a href="#Kafka-机器数量-2（峰值生产速度副本数-100）-1" class="headerlink" title="Kafka 机器数量&#x3D;2（峰值生产速度副本数&#x2F;100）+1"></a>Kafka 机器数量&#x3D;2<em>（峰值生产速度</em>副本数&#x2F;100）+1</h4><p>kafka的日志保存时间：7天</p>
+<p>kafka的硬盘大小：每天的数据量 x 7天</p>
+<h4 id="副本数设定"><a href="#副本数设定" class="headerlink" title="副本数设定"></a>副本数设定</h4><ul>
+<li>一般我们设置成 2 个或 3 个，很多企业设置为 2 个。</li>
+</ul>
+<h4 id="分区数"><a href="#分区数" class="headerlink" title="分区数"></a>分区数</h4><ul>
+<li>分区数并不是越多越好，一般分区数不要超过集群机器数量。分区数越多占用内存越大（ISR 等），一个节点集中的分区也就越多，当它宕机的时候，对系统的影响也就越大。 分区数一般设置为：3-10 个</li>
+</ul>
+<h4 id="监控"><a href="#监控" class="headerlink" title="监控"></a>监控</h4><ul>
+<li>公司自己开发的监控器； 开源的监控器：KafkaManager、KafkaMonitor</li>
+</ul>
+<h4 id="多少个topic"><a href="#多少个topic" class="headerlink" title="多少个topic"></a>多少个topic</h4><ul>
+<li>通常情况：多少个日志类型就多少个 Topic。</li>
+</ul>
+<h2 id="Flume"><a href="#Flume" class="headerlink" title="Flume"></a>Flume</h2><h3 id="是什么-4"><a href="#是什么-4" class="headerlink" title="是什么"></a>是什么</h3><blockquote>
+<p>分布式日志收集系统</p>
+</blockquote>
+<blockquote>
+<p>流式架构，灵活简单</p>
+</blockquote>
+<ul>
+<li>Flume能够实时、连续不断的处理和传输数据，就像数据在流水线上流动一样</li>
+<li>该架构使得Flume能高效的处理大规模的日志数据，满足了大数据处理的需求</li>
+</ul>
+<blockquote>
+<p>Flume可以采集文件，socket数据包等各种形式源数据，又可以将采集到的数据输出到HDFS、hbase、hive、kafka等众多外部存储系统中</p>
+</blockquote>
+<h3 id="干了什么"><a href="#干了什么" class="headerlink" title="干了什么"></a>干了什么</h3><h3 id="数据流向"><a href="#数据流向" class="headerlink" title="数据流向"></a>数据流向</h3><p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423093107.png" alt="image.png"></p>
+<ul>
+<li><p>source - channel - sink</p>
+</li>
+<li><p>event是传输数据的基本单位，本身为一个字节数组</p>
+</li>
+</ul>
+<p>为保证输送一定成功，送到目的地（sink）之前，会先缓存数据（channel），数据到了再删除缓存</p>
+<h3 id="基本组件-五个"><a href="#基本组件-五个" class="headerlink" title="基本组件 五个"></a>基本组件 五个</h3><p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423093150.png" alt="image.png"></p>
+<h3 id="其他-4"><a href="#其他-4" class="headerlink" title="其他"></a>其他</h3><ul>
+<li><p>flume采集数据会丢失吗</p>
+<ul>
+<li>不会，数据传输自身有事务</li>
+</ul>
+</li>
+</ul>
+<h2 id="Hive"><a href="#Hive" class="headerlink" title="Hive"></a>Hive</h2><h3 id="是什么-5"><a href="#是什么-5" class="headerlink" title="是什么"></a>是什么</h3><p>基于hadoop的数据仓库工具</p>
+<h3 id="做了什么-2"><a href="#做了什么-2" class="headerlink" title="做了什么"></a>做了什么</h3><ul>
+<li>将海量结构化数据映射为表，不过只是表的定义（即元数据），本质就是hdfs路径&#x2F;文件，以达到元数据与存储数据分离的目的 ，元数据一般放在mysql</li>
+<li>将sql转换为mr任务</li>
+<li>提供类sql查询功能</li>
+<li>读多写少，不支持对数据改写或删除</li>
+</ul>
+<h3 id="与传统数据库的区别"><a href="#与传统数据库的区别" class="headerlink" title="与传统数据库的区别"></a>与传统数据库的区别</h3><p>Hive和数据库除了拥有类型的查询语言外，无其他相似</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Hive</th>
+<th>传统数据库</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>存储位置</td>
+<td>HDFS</td>
+<td>块设备or本地文件系统</td>
+</tr>
+<tr>
+<td>数据改写</td>
+<td>不建议</td>
+<td>经常</td>
+</tr>
+<tr>
+<td>执行引擎</td>
+<td>MapReduce程序</td>
+<td>有自己的</td>
+</tr>
+<tr>
+<td>执行速度</td>
+<td>延迟高，面对大数据时Hive的并行计算有优势</td>
+<td>延迟较低</td>
+</tr>
+<tr>
+<td>数据规模</td>
+<td>大</td>
+<td>小</td>
+</tr>
+<tr>
+<td>扩展性</td>
+<td>随Hadoop扩展</td>
+<td>有限，被ACID语义限制</td>
+</tr>
+</tbody></table>
+<h3 id="内部表与外部表"><a href="#内部表与外部表" class="headerlink" title="内部表与外部表"></a>内部表与外部表</h3><p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423091506.png" alt="image.png"><br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423091400.png" alt="image.png"></p>
+<h3 id="sql转换为mr任务的流程"><a href="#sql转换为mr任务的流程" class="headerlink" title="sql转换为mr任务的流程"></a>sql转换为mr任务的流程</h3><p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423092958.png" alt="image.png"></p>
+<p>HiveSQL </p>
+<p>——AST（抽象语法树）</p>
+<p>——QB（查询块）</p>
+<p>——OperatorTree（操作树）</p>
+<p>——优化后的操作树</p>
+<p>——mapreduce任务树</p>
+<p>——优化后的mapreduce任务树</p>
+<ol>
+<li>Hive根据Antlr定义的词法、语法规则完成词法、语法分析将HQL解析为AST Tree</li>
+<li>遍历AST Tree，抽象出查询的基本组成单元Query Block</li>
+<li>遍历Query Block解析为操作树Operator Tree(即，逻辑执行计划)</li>
+<li>逻辑优化器进行操作树变换，合并多余ReduceSinkOperator，减少shuffle</li>
+<li>遍历Operator Tree，将操作树翻译为对应的MapReduce任务</li>
+<li>物理优化器进行MapReduce任务变换，生成最终的执行计划</li>
+</ol>
+<h3 id="自定义UDF函数"><a href="#自定义UDF函数" class="headerlink" title="自定义UDF函数"></a>自定义UDF函数</h3><p>UDF：User-Defined Functions，用户定义函数</p>
+<h3 id="其他-5"><a href="#其他-5" class="headerlink" title="其他"></a>其他</h3><h4 id="元数据"><a href="#元数据" class="headerlink" title="元数据"></a>元数据</h4><ul>
+<li>数据库名，表名及类型、字段名称、数据类型、数据所在位置等</li>
+<li>元数据存储在RDBMS中</li>
+</ul>
+<h2 id="数仓理论"><a href="#数仓理论" class="headerlink" title="数仓理论"></a>数仓理论</h2><h3 id="分层的意义-四个"><a href="#分层的意义-四个" class="headerlink" title="分层的意义 四个"></a>分层的意义 四个</h3><ul>
+<li><ol>
+<li>复杂问题简单化</li>
+</ol>
+<ul>
+<li>复杂问题分解为多层，每层只处理简单任务，方便定位问题</li>
+</ul>
+</li>
+<li><ol start="2">
+<li>减少重复开发</li>
+</ol>
+<ul>
+<li>通过中间层数据，极大的减少重复计算，增加一次计算结果的复用性</li>
+</ul>
+</li>
+<li><ol start="3">
+<li>隔离原始数据</li>
+</ol>
+<ul>
+<li>使真实数据与统计数据解耦开</li>
+</ul>
+</li>
+<li><ol start="4">
+<li>提高数仓可维护性</li>
+</ol>
+<ul>
+<li>某层问题只在该层解决，无需更改其它层代码或逻辑</li>
+</ul>
+</li>
+</ul>
+<h3 id="分层结构"><a href="#分层结构" class="headerlink" title="分层结构"></a>分层结构</h3><ul>
+<li>ADS层（Application Data Store）<ul>
+<li>为各种统计报表提供数据</li>
+</ul>
+</li>
+<li>DWT层（Data WareHouse Topic）<ul>
+<li>累计汇总</li>
+<li>一行信息代表一个主题对象的累计行为（如一个用户从注册那天至今一共下了多少次单）</li>
+</ul>
+</li>
+<li>DWS层（Data WareHouse Summary）<ul>
+<li>按天汇总</li>
+<li>一行信息代表一个主题对象一天的汇总行为（如一个用户一天的下单次数）</li>
+</ul>
+</li>
+<li>DWD层（Data WareHouse Detail）<ul>
+<li>清洗ODS层数据（去除空值、脏数据、超过极限范围的数据）、脱敏等</li>
+<li>一行信息代表一次业务行为（如一次下单）</li>
+</ul>
+</li>
+<li>ODS层（Operation Data Store）<ul>
+<li>原始数据</li>
+</ul>
+</li>
+</ul>
+<h3 id="常见模型介绍-两个"><a href="#常见模型介绍-两个" class="headerlink" title="常见模型介绍 两个"></a>常见模型介绍 两个</h3><h4 id="星型模型"><a href="#星型模型" class="headerlink" title="星型模型"></a>星型模型</h4><ul>
+<li>最常见</li>
+<li>结构简单，易于理解和实现</li>
+<li>组成<ul>
+<li>事实表（Fact Table）<ul>
+<li>模型中心</li>
+<li>存储事务性数据和度量指标（例如销售额、交易数量）</li>
+<li>每条记录通常有一个或多个指向维度表的外键</li>
+</ul>
+</li>
+<li>维度表<ul>
+<li>围绕事实表排列</li>
+<li>存储特定的属性信息（为事实表中的度量提供上下文）</li>
+<li>常见的包括时间、地点、客户、产品等</li>
+<li>含有多个列，每列是该维度的一个属性</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>优点<ul>
+<li>结构简单，查询快速。</li>
+<li>用户只需查询少数几个表就能获取所需信息</li>
+</ul>
+</li>
+<li>适用于<ul>
+<li>大规模、复杂的操作，尤其是用户需要从多个维度分析数据时</li>
+</ul>
+</li>
+</ul>
+<h4 id="雪花模型"><a href="#雪花模型" class="headerlink" title="雪花模型"></a>雪花模型</h4><ul>
+<li>结构更复杂，存储效率更高，查询效率可能更低<ul>
+<li>星型模型的基础上增加了更多的层次和细节</li>
+</ul>
+</li>
+<li>与星型模型的区别<ul>
+<li><ol>
+<li>更细更规范化的维度表（如地址信息被细分为“国家”“省份”）</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>更复杂的结构：查询涉及的表可能更多，性能有所下降</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>优点<ul>
+<li>数据的维护和存储效率更高，因为减少了数据冗余</li>
+<li>其规范化程度更高，有助于节约存储空间并保持数据的一致性</li>
+</ul>
+</li>
+<li>适用于<ul>
+<li>维度属性具有明显层次结构的场景</li>
+</ul>
+</li>
+</ul>
+<h3 id="建模流程"><a href="#建模流程" class="headerlink" title="建模流程"></a>建模流程</h3><ul>
+<li><ol>
+<li>业务需求分析</li>
+</ol>
+<ul>
+<li>了解用户需求，确定数据仓库的目标和范围</li>
+</ul>
+</li>
+<li><ol start="2">
+<li>数据源分析</li>
+</ol>
+<ul>
+<li>确定数据仓库需要集成的数据源</li>
+<li>分析数据源的质量（包括数据完整性、一致性和准确性）</li>
+</ul>
+</li>
+<li><ol start="3">
+<li>概念模型设计</li>
+</ol>
+<ul>
+<li>设计一个高层次的数据模型</li>
+<li>通常是ER模型（实体-关系模型）<ul>
+<li>表示数据元素之间的关系</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ol start="4">
+<li>逻辑模型设计</li>
+</ol>
+<ul>
+<li>将 概念模型 转化为 逻辑模型<ul>
+<li>星型</li>
+<li>雪花</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ol start="5">
+<li>物理模型设计</li>
+</ol>
+<ul>
+<li>根据逻辑模型设计物理数据库<ul>
+<li>包括表、索引的创建</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ol start="6">
+<li>数据抽取、转换和加载（ETL）</li>
+</ol>
+</li>
+<li><ol start="7">
+<li>实施和维护</li>
+</ol>
+<ul>
+<li>将数仓部署到生产环境</li>
+<li>定期监控、维护和更新数仓，以应对业务需求的变化</li>
+</ul>
+</li>
+</ul>
+<h3 id="事实表-and-维度表"><a href="#事实表-and-维度表" class="headerlink" title="事实表 and 维度表"></a>事实表 and 维度表</h3><ul>
+<li>事实表<ul>
+<li>现实世界中各种事件形成的数据</li>
+<li>如下单支付生成的数据</li>
+</ul>
+</li>
+<li>维度表<ul>
+<li>不同的维度去分析</li>
+<li>如某段时间内创建用户的人数</li>
+</ul>
+</li>
+</ul>
+<h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><ul>
+<li>ls：列出当前目录的内容</li>
+<li>cd：更改目录</li>
+<li>mkdir：创建新目录</li>
+<li>rmdir：删除目录</li>
+<li>touch：创建新的空文件</li>
+<li>rm：移除文件和目录</li>
+<li>du：估算文件空间使用情况</li>
+</ul>
+<h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><h2 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h2><h3 id="类（class）"><a href="#类（class）" class="headerlink" title="类（class）"></a>类（class）</h3><ul>
+<li>构造对象的模板</li>
+<li>类构造对象的过程 &#x3D; 创建类的实例</li>
+<li>所有类都源自“神通广大的超类”：Object</li>
+</ul>
+<h3 id="超类"><a href="#超类" class="headerlink" title="超类"></a>超类</h3><p>被继承的类</p>
+<h3 id="子类"><a href="#子类" class="headerlink" title="子类"></a>子类</h3><p>继承别人的类</p>
+<h3 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h3><p>实例域</p>
+<ul>
+<li><p>对象中的数据</p>
+</li>
+<li><p>注意</p>
+<ul>
+<li>在所有的方法中（包括构造器）不要命名与实例域同名的变量<br>  <img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423093533.png" alt="image.png"></li>
+</ul>
+</li>
+<li><p>举例</p>
+<ul>
+<li>三个实例域<br>  <img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423093559.png" alt="image.png|200"></li>
+</ul>
+</li>
+</ul>
+<h6 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h6><p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423093604.png" alt="image.png|600"></p>
+<h3 id="对象变量"><a href="#对象变量" class="headerlink" title="对象变量"></a>对象变量</h3><h6 id="实例-1"><a href="#实例-1" class="headerlink" title="实例"></a>实例</h6><p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423093616.png" alt="image.png|250"></p>
+<p>一个对象变量并没有实际包含一个对象，而仅仅引用一个对象</p>
+<p>任何对象变量的值都是对存储在另一个地方的一个对象的引用</p>
+<p>new操作符的返回值也是一个引用</p>
+<p>显式的将对象变量设置成null，表明没有引用任何对象<br>如deadline &#x3D; null;此时对它应用方法将报错<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423093642.png" alt="image.png"><br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423093647.png" alt="image.png"></p>
+<h3 id="接口（interface）"><a href="#接口（interface）" class="headerlink" title="接口（interface）"></a>接口（interface）</h3><blockquote>
+<p>描述类具有什么功能，不给出每个功能的具体实现</p>
+</blockquote>
+<p>不是类（不能用new实例化一个接口）</p>
+<p>一个类可以实现（implement）一个或多个接口</p>
+<p>接口中的所有方法自动的属于public</p>
+<ul>
+<li><p>将类声明为实现某个接口需要使用关键字implements<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423093715.png" alt="image.png|300"></p>
+</li>
+<li><p>注意</p>
+<ul>
+<li>在接口声明中无需在方法compareTo前加public</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423093722.png" alt="image.png|300"></p>
+<pre><code>- 但在实现接口方法时需要加上
+</code></pre>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423093733.png" alt="image.png|300"></p>
+<h3 id="内部类（inner-class）"><a href="#内部类（inner-class）" class="headerlink" title="内部类（inner class）"></a>内部类（inner class）</h3><blockquote>
+<p>定义在另一个类中的类</p>
+</blockquote>
+<h4 id="匿名内部类"><a href="#匿名内部类" class="headerlink" title="匿名内部类"></a>匿名内部类</h4><blockquote>
+<p>定义一个类的同时进行实例化</p>
+</blockquote>
+<p>与局部类类似，但没有类名</p>
+<p>可以让代码更简洁</p>
+<h5 id="和普通类对比"><a href="#和普通类对比" class="headerlink" title="和普通类对比"></a>和普通类对比</h5><ul>
+<li><p>普通形式<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423093751.png" alt="image.png"></p>
+</li>
+<li><p>匿名内部类形式<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423093808.png" alt="image.png"></p>
+</li>
+</ul>
+<h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><blockquote>
+<p>扩展一个类建立另外一个类</p>
+</blockquote>
+<p>扩展后的新类具有所扩展的类的全部属性和方法</p>
+<p>只需提供新类的新方法和数据域就可以了</p>
+<h3 id="静态与非静态方法"><a href="#静态与非静态方法" class="headerlink" title="静态与非静态方法"></a>静态与非静态方法</h3><h4 id="静态方法"><a href="#静态方法" class="headerlink" title="静态方法"></a>静态方法</h4><ul>
+<li>整个类的工具方法</li>
+</ul>
+<ul>
+<li>static关键字定义</li>
+<li>可直接通过类名调用，无需创建实例</li>
+<li>只能访问静态成员（变量或方法），不能直接访问非静态成员</li>
+</ul>
+<h4 id="非静态方法"><a href="#非静态方法" class="headerlink" title="非静态方法"></a>非静态方法</h4><ul>
+<li>与对象状态和行为相关的操作</li>
+</ul>
+<ul>
+<li>与类的实例（对象)关联</li>
+<li>必须通过类的实例调用（它们依赖于对象的状态）</li>
+<li>可以访问类的静态和非静态成员</li>
+</ul>
+<h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><ul>
+<li><ul>
+<li>&amp;&amp;：逻辑与，都真才真</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>||：逻辑或，一个真就真</li>
+</ul>
+<h3 id="面向对象程序设计（OOP）"><a href="#面向对象程序设计（OOP）" class="headerlink" title="面向对象程序设计（OOP）"></a>面向对象程序设计（OOP）</h3><p>java完全面向对象</p>
+<p>程序由对象组成</p>
+<p>每个对象可以有公开部分和隐藏部分</p>
+<p>一个原则：可以通过扩展一个类建立另外一个类</p>
+<h3 id="封装（有时称为数据隐藏）"><a href="#封装（有时称为数据隐藏）" class="headerlink" title="封装（有时称为数据隐藏）"></a>封装（有时称为数据隐藏）</h3><p>将数据和行为组合在一个包中</p>
+<p>关键在于：<br>    绝对不能让类中的方法直接的访问其他类的实例域<br>    程序仅通过对象的方法与对象数据进行交互</p>
+<h3 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h3><h4 id="private"><a href="#private" class="headerlink" title="private"></a>private</h4><p>本类自身的方法才能访问</p>
+<p>其他类的方法不能读写这些实例域</p>
+<h4 id="public"><a href="#public" class="headerlink" title="public"></a>public</h4><p>任何类的任何方法都可以调用这些方法</p>
+<p>（共四种访问级别）<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423093848.png" alt="image.png"></p>
+<h4 id="this"><a href="#this" class="headerlink" title="this"></a>this</h4><p>可以用于表示隐式参数<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423093905.png" alt="image.png"></p>
+<h3 id="隐式参数-and-显式参数"><a href="#隐式参数-and-显式参数" class="headerlink" title="隐式参数 and 显式参数"></a>隐式参数 and 显式参数</h3><p>隐式参数：调用函数的对象</p>
+<p>显式参数：通常说的参数</p>
+<ul>
+<li>举例<ul>
+<li>raiseSalary有两个参数<br>  <img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423093918.png" alt="image.png|300"></li>
+</ul>
+</li>
+</ul>
+<p>第一个参数：隐式参数，是出现在方法名前的Employee类对象</p>
+<p>第二个参数：显式参数，double byPercent</p>
+<h3 id="潜规则"><a href="#潜规则" class="headerlink" title="潜规则"></a>潜规则</h3><p>文件名必须与public类的名字相匹配</p>
+<p>字节码解释器会运行main方法中的代码</p>
+<p>先后构建三个对象<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423093937.png" alt="image.png"></p>
+<h3 id="方法（method）"><a href="#方法（method）" class="headerlink" title="方法（method）"></a>方法（method）</h3><p>操纵数据的过程</p>
+<h3 id="构造器（constructor）"><a href="#构造器（constructor）" class="headerlink" title="构造器（constructor）"></a>构造器（constructor）</h3><p>是一种特殊的方法</p>
+<p>构造并初始化对象</p>
+<p>名字与类名相同（如Date类的构造器名为Date）</p>
+<p>在构造类的对象时，构造器会运行，以便将实例域初始化为所希望的状态</p>
+<p>总是伴随new操作符的执行而被调用，无法对一个已经存在的对象调用构造器以达到重新设置实例域的目的<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423093949.png" alt="image.png|400"></p>
+<ul>
+<li>下图会出错<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423093955.png" alt="image.png|500"></li>
+</ul>
+<h1 id="数据库（SQL）"><a href="#数据库（SQL）" class="headerlink" title="数据库（SQL）"></a>数据库（SQL）</h1><p>结构化查询语言，访问关系型数据库</p>
+<h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><p>DQL：数据查询语言<br>DML：数据操作语言<br>DDL：数据定义语言<br>TCL：事务控制语言<br>DCL：数据控制语言</p>
+<p>查看所有字段用 * 或 一个一个输入（产品中不推荐用 * 因为有不确定性）</p>
+<p>SELECT emp_name AS “姓名”, salary * 12 + COALESCE(bonus, 0) “年薪” FROM employee;<br>AS指定别名（可以省略）</p>
+<p>COALESCE（聚结）<br>COALESCE(bonus, 0)当奖金为null时，返回0</p>
+<p>select from where<br>where指定条件</p>
+<p>between包含端点值</p>
+<p>WHERE emp_name IN (‘张三’, ‘李四’, ‘张飞’);<br>in用于查看任意值</p>
+<p>emp_name LIKE ‘%云%’<br>名字中有云</p>
+<p>LIKE运算符（字符串的模式匹配）<br>其支持两个通配符<br>% 匹配任意多个字符，_ 匹配单个字符</p>
+<p>LIKE ‘AB%’               返回以AB开始的任意字符串<br>LIKE ‘%ABC’            返回以ABC结束的任意字符串<br>LIKE ‘%ABC%’         返回包含ABC的任意字符串<br>LIKE ‘ _AB’ （下划线没显示）               返回以AB结束的3个字符的字符串</p>
+<p>null表示空值（意味着缺失或未知数据）</p>
+<p>判断空值不能直接用等于或不等于<br>需要使用特殊的IS NULL和IS NOT NULL</p>
+<p>限制返回数量 LIMIT</p>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423094009.png" alt="image.png"></p>
+<h2 id="宽表-and-窄表"><a href="#宽表-and-窄表" class="headerlink" title="宽表 and 窄表"></a>宽表 and 窄表</h2><ul>
+<li>宽表（Wide Table）<ul>
+<li>不符合三范式</li>
+<li>每行都有很多列，每列是某一种特定的信息</li>
+<li>用于存储事实表中的汇总数据，或需要展现很多属性和维度时使用</li>
+<li>适合于查询效率要求高且数据结构相对固定的场景</li>
+</ul>
+</li>
+<li>窄表（Narrow Table）<ul>
+<li>符合三范式</li>
+<li>很少的列，可能很多的行</li>
+<li>窄表则适用于需要高度灵活性和存储效率的场景</li>
+</ul>
+</li>
+</ul>
+<h2 id="主表-and-从表"><a href="#主表-and-从表" class="headerlink" title="主表 and 从表"></a>主表 and 从表</h2><ul>
+<li>被指向的表：主表</li>
+<li>包含外键的表：从表</li>
+</ul>
+<p>从表数据受主表约束<br>向从表中插入或更新数据时，外键的值必须存在于主表的主键中</p>
+<h2 id="外键"><a href="#外键" class="headerlink" title="外键"></a>外键</h2><p>数据库外键（Foreign Key)是关系型数据库的一个重要概念，它用于建立表与表之间的关系，以保证数据的完整性和一致性。</p>
+<p>外键是指一个表中的一个或多个字段，它们的值必须在另一个表中的某个字段中存在。这个被参照的表中的字段通常是主键（Primary Key），这样就可以通过外键将两个表关联起来。</p>
+<p>举个例子，假设有两个表，一个是订单表，一个是客户表。订单表中有一个字段是客户ID，这个字段就可以作为外键，参照客户表中的客户ID字段。这样，当我们在订单表中插入一条数据时，就必须保证这个客户ID在客户表中已经存在，否则就会出现数据不一致的问题。</p>
+<p>外键的作用是保证数据的完整性和一致性。通过外键，我们可以将多个表关联起来，从而避免数据重复和冗余。同时，外键也可以限制数据的删除和修改，以避免对关联表中的数据造成影响。</p>
+<p>需要注意的是，外键的使用需要谨慎，因为它会对数据库的性能产生影响。</p>
+<h2 id="主键"><a href="#主键" class="headerlink" title="主键"></a>主键</h2><ul>
+<li>唯一标识每条记录</li>
+<li>列不允许null</li>
+<li>必须包含唯一的值</li>
+<li>每个表都应该有一个主键，且只有一个</li>
+<li>一般是列</li>
+</ul>
+<h2 id="语句"><a href="#语句" class="headerlink" title="语句"></a>语句</h2><ul>
+<li>DISTINCT<ul>
+<li>结果去重</li>
+</ul>
+</li>
+<li>WHERE<ul>
+<li>筛选结果</li>
+</ul>
+</li>
+<li>AND OR<ul>
+<li>在WHERE句中连接筛选条件</li>
+</ul>
+</li>
+<li>IN<ul>
+<li>与WHERE有关的用法<ul>
+<li>筛选结果中含IN中元素的结果</li>
+</ul>
+</li>
+<li>还有一个用法</li>
+</ul>
+</li>
+<li>LIMIT<ul>
+<li>LIMIT 初始位置，记录数</li>
+<li>LIMIT 记录数</li>
+<li>LIMIT 记录数 OFFSET 初始位置</li>
+</ul>
+</li>
+<li>DELETE<ul>
+<li>删除记录</li>
+</ul>
+</li>
+</ul>
+<p>ROUND 聚合函数，精确到小数点后几位</p>
+<p>ROUND(avg(score),3)<br>算出score平均数并精确到小数点后3位</p>
+<p>算平均数时需要用到GROUP BY</p>
+<p>表更新语句结构：<br>UPDATE 表名<br>SET 字段&#x3D;值<br>WHERE 过滤条件</p>
+<h1 id="计算机基础"><a href="#计算机基础" class="headerlink" title="计算机基础"></a>计算机基础</h1><p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423103712.png" alt="image.png"></p>
+<h1 id="数据结构and算法"><a href="#数据结构and算法" class="headerlink" title="数据结构and算法"></a>数据结构and算法</h1><h2 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h2><p>查字典 - 二分查找</p>
+<p>整理扑克 - 插入排序</p>
+<p>货币找零 - 贪心算法</p>
+<p><strong>数据结构：</strong></p>
+<p>计算机组织和存储数据的方式</p>
+<p>算法基于数据结构，是数据结构发挥作用的舞台，通常可以基于不同的数据结构实现</p>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423110022.png" alt="image.png"></p>
+<p>数据结构分类：</p>
+<ol>
+<li>逻辑结构：揭示了数据之间的逻辑关系</li>
+</ol>
+<ul>
+<li>线性</li>
+<li>非线性<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423110037.png" alt="image.png"></li>
+</ul>
+<ol>
+<li>物理结构：反映了数据在计算机内存中的存储方式</li>
+</ol>
+<ul>
+<li>连续存储：数组</li>
+<li>分散存储：链表</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423110049.png" alt="image.png"></p>
+<p>所有数据结构都是基于数组或链表或二者组合实现</p>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423110101.png" alt="image.png"></p>
+<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><ul>
+<li><p>数组存储在栈和堆上的区别<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423104438.png" alt="image.png"></p>
+</li>
+<li><p>索引本质</p>
+<ul>
+<li>内存地址的偏移量，所以从0开始</li>
+</ul>
+</li>
+</ul>
+<h2 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h2><ul>
+<li><p>头节点常用于链表的代称</p>
+</li>
+<li><p>三种常见链表类型<br>  <img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423104452.png" alt="image.png"></p>
+<ul>
+<li><p>单向链表</p>
+</li>
+<li><p>环形链表</p>
+</li>
+<li><p>双向链表</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h2><p>头插法：将元素插入链表头部</p>
+<p>栈的典型应用：<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423110253.png" alt="image.png"></p>
+<p>撤销与反撤销是如何实现的？<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423110301.png" alt="image.png"></p>
+<h2 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h2><p>队列的典型应用：<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423110337.png" alt="image.png"></p>
+<p>双向队列：<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423110347.png" alt="image.png"></p>
+<p>双向队列的应用：</p>
+<p>  <img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423110356.png" alt="image.png"></p>
+<p>双向队列相当于是优化后的栈：</p>
+<p>继承了栈的思想，增加了栈不具有的操作</p>
+<h2 id="二叉树"><a href="#二叉树" class="headerlink" title="二叉树"></a>二叉树</h2><ul>
+<li>二叉树与“分治”息息相关</li>
+</ul>
+<p>每个节点包含值、左子节点引用和右子节点引用</p>
+<p>常见术语：</p>
+<ol>
+<li>边：连接两个节点的线段，即节点引用（指针）</li>
+<li>节点的度：节点的子节点数量</li>
+<li>二叉树的高度：根节点到最远叶节点经过的边的数量</li>
+<li>节点的深度：根到该节点边的数量（顶部开始）</li>
+<li>节点的高度：最远叶节点到该节点边的数量（底部开始）</li>
+</ol>
+<p>删除节点意味着删除该节点及其所有子树<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423104503.png" alt="image.png"></p>
+<pre><code>- 常见二叉树类型
+
+    - 满二叉树（完美二叉树）
+</code></pre>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423104512.png" alt="image.png"></p>
+<pre><code>    - 完全二叉树
+</code></pre>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423104528.png" alt="image.png"></p>
+<pre><code>        - 完全二叉树很适合用数组表示
+</code></pre>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423104538.png" alt="image.png"></p>
+<pre><code>    - 完满二叉树
+</code></pre>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423104545.png" alt="image.png"></p>
+<pre><code>    - 平衡二叉树
+</code></pre>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423104606.png" alt="image.png"></p>
+<pre><code>    - 两个极端：完美二叉树与链表
+</code></pre>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423104614.png" alt="image.png"></p>
+<pre><code>- 二叉树计算公式
+</code></pre>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423104624.png" alt="image.png"></p>
+<pre><code>    -  
+
+    - 注意“高度”和“深度”定义为“经过的边的数量”还是“经过的节点的数量”，后者比前者多1
+
+- 二叉搜索树
+</code></pre>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423104631.png" alt="image.png"></p>
+<pre><code>    - 任意节点的值：左 &lt; 根 &lt; 右
+
+    - 不允许存在重复节点
+</code></pre>
+<p>中序遍历是升序的<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423104638.png" alt="image.png"></p>
+<pre><code>    -  
+</code></pre>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423104648.png" alt="image.png"></p>
+<pre><code>- 平衡二叉搜索树
+
+    - 不会退化的二叉搜索树
+</code></pre>
+<p>AVL树<br>许多应用中红黑树比 AVL 树更受欢迎</p>
+<pre><code>    - AVL树任意节点的平衡因子皆满足在[-1，1]内
+</code></pre>
+<p>旋转是AVL树保持特性的重点</p>
+<pre><code>    - 退化举例
+</code></pre>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423104655.png" alt="image.png"></p>
+<pre><code>    - 需要获取节点高度（指从该节点到它最远叶节点的距离，即经过的边的数量）
+
+    - 平衡因子
+
+        - 高度（左子树 - 右子树）
+</code></pre>
+<p>空节点为 0</p>
+<pre><code>    - 失衡节点
+
+        - 平衡因子绝对值大于1
+
+    - 4种旋转操作：（实际上通过修改节点指针实现）
+</code></pre>
+<ol>
+<li>右旋（失衡节点旋转到右边）</li>
+<li>左旋</li>
+<li>先右旋后左旋</li>
+<li>先左旋后右旋</li>
+</ol>
+<h2 id="列表（list）"><a href="#列表（list）" class="headerlink" title="列表（list）"></a>列表（list）</h2><ul>
+<li><p>表示元素的有序集合，支持增删改查遍历，无需考虑容量</p>
+</li>
+<li><p>实现方式</p>
+<ul>
+<li><p>链表</p>
+</li>
+<li><p>动态数组</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="图"><a href="#图" class="headerlink" title="图"></a>图</h2><p>树是图的特例</p>
+<p>顶点 + 边</p>
+<p>分类：</p>
+<ul>
+<li>边是否有向</li>
+</ul>
+<ol>
+<li>无向图（微信好友）</li>
+<li>有向图（b站关注）</li>
+</ol>
+<ul>
+<li>所有顶点是否连通</li>
+</ul>
+<ol>
+<li>连通图：从某个顶点出发，可以到达任意顶点</li>
+<li>非连通图：至少有一个顶点无法到达</li>
+</ol>
+<ul>
+<li>为边添加“权重”，则得到有权图</li>
+</ul>
+<ol>
+<li>例如《王者荣耀》通过共同游戏时间计算“亲密度”</li>
+</ol>
+<p>常用术语：</p>
+<ul>
+<li><p>度：一个顶点拥有的边数</p>
+</li>
+<li><p>有向图中分为</p>
+</li>
+<li><p>入度</p>
+</li>
+<li><p>出度</p>
+</li>
+</ul>
+<p>常用表示方式：</p>
+<ol>
+<li>邻接矩阵（空间换时间）</li>
+</ol>
+<p>  <img src="https://raw.githubusercontent.com/whisperouo/images/main/%E5%9B%BE%E5%83%8F.png" alt="图像.png"></p>
+<p>将元素 0和1 替换为权重，可表示有权图</p>
+<ol>
+<li>邻接表（时间换空间）</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423105324.png" alt="image.png"><br>更省空间，但时间效率不如邻接矩阵</p>
+<p>优化：链表较长时，可将链表转化为AVL树或红黑树，降低时间复杂度</p>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423105422.png" alt="image.png"></p>
+<p>图的遍历：</p>
+<p>树遍历是图遍历的一种特例</p>
+<ol>
+<li>广度优先遍历（BFS）<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423105514.png" alt="image.png"></li>
+</ol>
+<p>由近至远，层层遍历</p>
+<p>常用队列实现</p>
+<p>不唯一</p>
+<ol>
+<li>深度优先遍历（DFS）</li>
+</ol>
+<p>  <img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423105523.png" alt="image.png"></p>
+<p>优先走到底，无路可走再回头</p>
+<p>树的前中后序遍历都是DFS</p>
+<p>常用递归实现</p>
+<p>不唯一</p>
+<p>Tips：</p>
+<ul>
+<li>路径定义是顶点序列还是边序列不同语言版本定义不一致，中文版是顶点序列</li>
+</ul>
+<h2 id="堆"><a href="#堆" class="headerlink" title="堆"></a>堆</h2><p>满足特定条件的完全二叉树（特殊的树形结构）</p>
+<p>两种：（任意节点的值大于等于或小于等于其子节点）</p>
+<ol>
+<li>大顶堆</li>
+<li>小顶堆</li>
+</ol>
+<p>堆顶：二叉树根节点</p>
+<p>堆底：底层最靠右的节点</p>
+<p>堆常用于实现优先队列（一种抽象数据结构），大顶堆相当于元素按从大到小顺序出队</p>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423105608.png" alt="image.png"></p>
+<p>完全二叉树很适合使用数组表示，故使用数组存储堆</p>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423105642.png" alt="image.png"></p>
+<p>出堆操作：</p>
+<ol>
+<li>交换堆顶与堆底元素（直接删除堆顶元素索引变动太大）</li>
+<li>删除堆底元素（即原堆顶元素）</li>
+<li>从顶至底执行堆化</li>
+</ol>
+<p>常见应用：</p>
+<ol>
+<li>实现优先队列</li>
+<li>堆排序</li>
+<li>获取最大的 k 个元素</li>
+</ol>
+<p>Top-k问题解决思路：</p>
+<ol>
+<li>遍历选择</li>
+<li>排序</li>
+<li>堆</li>
+</ol>
+<ul>
+<li>最高效</li>
+<li>适用于动态数据流的使用场景</li>
+<li>流程</li>
+</ul>
+<ol>
+<li>初始化一个小顶堆</li>
+<li>数组前 k 个元素依次入堆</li>
+<li>从第 k+1 个元素开始，若当前元素大于堆顶元素，则堆顶元素出堆，当前元素入堆</li>
+<li>遍历完成后，堆中保存的就是最大的 k 个元素</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423105658.png" alt="image.png"></p>
+<h2 id="哈希表"><a href="#哈希表" class="headerlink" title="哈希表"></a>哈希表</h2><p>建立 key 和 value 之间的映射</p>
+<p>增删查改都是O(1)，相当高效</p>
+<p>像是一个数组，索引是由哈希函数计算得到</p>
+<p>哈希桶：</p>
+<p>哈希值相同的元素放在一个桶中</p>
+<p>哈希表中，注意是哈希表中，数组的每个空位就是一个桶 bucket</p>
+<p>哈希表寻找元素的流程：</p>
+<ol>
+<li>先找在哪一个桶中</li>
+<li>再在桶中寻找</li>
+</ol>
+<p>负载因子load factor：</p>
+<p>哈希表元素数量 &#x2F; 桶数量</p>
+<p>用于衡量哈希冲突的严重程度</p>
+<p>常作为哈希表扩容的触发条件</p>
+<p>哈希冲突：<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423110458.png" alt="image.png"></p>
+<p>可以通过扩容哈希表减少哈希冲突</p>
+<p>哈希冲突解决办法：</p>
+<ol>
+<li><p>改良哈希表数据结构</p>
+</li>
+<li><p>链式地址</p>
+</li>
+<li><p>开放寻址</p>
+</li>
+<li><p>必要时，即哈希冲突严重时才扩容</p>
+</li>
+</ol>
+<p>链式地址：</p>
+<p>每个桶存储一个元素改为每个桶存储一个链表</p>
+<p>  <img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423110510.png" alt="image.png"></p>
+<p>开放寻址：</p>
+<p>不引入额外数据结构，通过多次探测来处理哈希冲突</p>
+<ol>
+<li>线性探测</li>
+<li>平方探测</li>
+<li>多次哈希</li>
+</ol>
+<p>java采用链式地址实现哈希表</p>
+<p>不可变对象才可作为哈希表的 key</p>
+<h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><p> 有限时间内解决特定问题的 一组指令 或 操作步骤</p>
+<h2 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h2><ul>
+<li>将复杂问题分解为重叠的子问题并通过最优子结构性质来求解，通过存储子问题的解避免重复计算</li>
+</ul>
+<p>小溪汇入河流，江河汇入大海</p>
+<ul>
+<li><p>常用于</p>
+<ul>
+<li>最优问题，如最短路径、最长公共子序列</li>
+</ul>
+</li>
+<li><p>关键在于</p>
+<ul>
+<li>状态转移方式（大问题 -》 小问题），逐步求解并保存结果</li>
+</ul>
+</li>
+<li><p>求解步骤</p>
+<ul>
+<li>1 分解子问题</li>
+</ul>
+</li>
+</ul>
+<p>2 写出子问题的递推关系<br>3 确定DP数组的计算顺序<br>4 空间优化（可选）</p>
+<ul>
+<li><p>经典例题</p>
+<ul>
+<li><ul>
+<li>斐波那契数列</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>最长递增子序列</li>
+<li>背包问题</li>
+<li>暴力解</li>
+<li>备忘录优化</li>
+</ul>
+<h2 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h2><ul>
+<li><p>两个阶段</p>
+<ul>
+<li>递：调用自身，直至终止条件</li>
+</ul>
+</li>
+</ul>
+<p>归：触发终止条件后，逐层返回<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423104738.png" alt="image.png"></p>
+<ul>
+<li>有“尾递归”这么个事，但是了解不多</li>
+</ul>
+<p>递归涉及了分治思想，也就是“将问题分解为更小子问题”</p>
+<p>递归与栈-内在联系：先入后出</p>
+<p>可以用于反转操作，倒序输出<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423104745.png" alt="image.png"></p>
+<ul>
+<li></li>
+</ul>
+<h2 id="贪心"><a href="#贪心" class="headerlink" title="贪心"></a>贪心</h2><ul>
+<li>在问题每个决策阶段，都选择当前看起来最优的选择</li>
+</ul>
+<p>贪心算法和动态规划都常用于解决优化问题</p>
+<h2 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h2><p>二分查找</p>
+<p>仅适用于有序数据</p>
+<p>仅适用于数组</p>
+<p>基于分治策略的高效搜索算法</p>
+<p>利用数据有序性，每轮缩小一半范围</p>
+<p>数据量较小时，线性查找更快</p>
+<h2 id="分治"><a href="#分治" class="headerlink" title="分治"></a>分治</h2><p>基于递归</p>
+<p>两个阶段：</p>
+<ol>
+<li>分（划分）：直至最小子问题</li>
+<li>治（合并）</li>
+</ol>
+<p>如何判断分治问题</p>
+<ol>
+<li>问题可以分解且能以相同方式递归划分</li>
+<li>子问题是独立的（没有重叠，互不依赖，可以独立解决）</li>
+<li>子问题的解可以合并</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423105808.png" alt="image.png"></p>
+<p>分治能够提升搜索效率，本质上是因为暴力搜索每轮只能排除一个选项，<strong>而分治搜索每轮可以排除一半选项</strong>。</p>
+<h2 id="回溯"><a href="#回溯" class="headerlink" title="回溯"></a>回溯</h2><p>从一个初始状态出发，暴力搜索所有解，遇到正确的就记录，直到找到解或尝试了所有可能的选择</p>
+<p>采用“深度优先搜索”</p>
+<p>剪枝：</p>
+<p>添加约束操作，避免无意义的搜索行为<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423105914.png" alt="image.png"></p>
+<p>适用于：</p>
+<p>某些搜索问题和约束满足问题</p>
+<p>  <img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423105934.png" alt="image.png"></p>
+<p>全排列问题</p>
+<p>给定一个集合（如数组或字符串），找出元素所有可能的排列</p>
+<p>子集和问题</p>
+<p>n皇后问题</p>
+<h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423110545.png" alt="image.png"></p>
+<p><strong>快速排序</strong></p>
+<p>核心：哨兵划分（本质是把长数组排序简化为两个短数组排序）</p>
+<p>思路：</p>
+<ol>
+<li>选择数组某元素为“基准数”</li>
+<li>小于基准数移到左侧，大于基准数移到右侧</li>
+</ol>
+<p>  <img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423110648.png" alt="image.png"></p>
+<p>不稳定</p>
+<p>插入排序</p>
+<p><strong>插入排序</strong></p>
+<p>  <img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423110700.png" alt="image.png"></p>
+<p>稳定</p>
+<p>常用思路：</p>
+<p>短数组，直接采用插入排序</p>
+<p>常数组，采用基于分治策略的排序算法</p>
+<p><strong>插入排序</strong></p>
+<p>稳定</p>
+<p>常用思路：</p>
+<p>短数组，直接采用插入排序</p>
+<p>常数组，采用基于分治策略的排序算法</p>
+<p>选择排序</p>
+<p><strong>选择排序</strong></p>
+<p>开启一个循环，每轮选择一个最值元素，放在头&#x2F;尾</p>
+<p>不稳定</p>
+<p>归并排序</p>
+<p><strong>归并排序</strong></p>
+<p>基于分治策略</p>
+<p>思路：两个阶段</p>
+<ol>
+<li>划分阶段：通过递归不断将数组从中点分开，和快排一样将长转换为短问题</li>
+<li>合并阶段：子数组长度为 1，终止划分，开始合并</li>
+</ol>
+<p>  <img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423110733.png" alt="image.png"><br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423110745.png" alt="image.png"></p>
+<p>归并排序 vs 二叉树后序排序</p>
+<p>递归顺序一致</p>
+<ul>
+<li>归并排序：先左数组，再右数组，最后合并</li>
+<li>后序遍历：先左子树，再右子树，最后根节点</li>
+</ul>
+<p>稳定排序</p>
+<p>对于链表排序，归并排序最优</p>
+<p><strong>堆排序</strong></p>
+<p>实现思路：</p>
+<p>old（需要一个额外数组保存弹出的元素，浪费空间）</p>
+<ol>
+<li>建堆</li>
+<li>依次出堆</li>
+</ol>
+<p>new（直接把结果保存在本数组中（原地排序））</p>
+<ol>
+<li>建堆</li>
+<li>堆顶堆底互换，堆长➖1，已排序数量➕1</li>
+<li>调整堆</li>
+<li>循环2、3步<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423110804.png" alt="image.png"></li>
+</ol>
+<p>非稳定</p>
+<p>桶排序</p>
+<p>计数排序</p>
+<p><strong>计数排序（未完待续）</strong></p>
+<p>非比较排序</p>
+<p>简单实现</p>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423110821.png" alt="image.png"></p>
+<p>完整实现没看</p>
+<p>稳定排序</p>
+<p>桶排序</p>
+<p>非比较排序</p>
+<p>非比较排序时间复杂度可以到线性阶，比较排序最多O（nlogn）</p>
+<p>分治策略</p>
+<p>  <img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423110836.png" alt="image.png"></p>
+<p>适用于大数据</p>
+<p>是否稳定取决于桶内算法是否稳定</p>
+<p>如何平均分配？</p>
+<p>若数据分布不均衡，则先粗略分布到k个桶中，再把桶内元素太多的继续划分几个桶，直至所有桶数据大致均衡</p>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423110850.png" alt="image.png"></p>
+<p><strong>基数排序</strong></p>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423110900.png" alt="image.png"></p>
+<p>思想：</p>
+<p>与计数排序一致，统计个数实现排序。在此基础上，利用数字位之间的递进关系，对每一位进行排序</p>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423110911.png" alt="image.png"></p>
+<p>适用于数值范围大的情况，但数据必须可以表示为固定位数的格式</p>
+<h2 id="时空复杂度"><a href="#时空复杂度" class="headerlink" title="时空复杂度"></a>时空复杂度</h2><h3 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h3><ul>
+<li><p>本质</p>
+<ul>
+<li>统计的不是算法运行时间，而是算法运行时间随着数据量变大时的增长趋势</li>
+</ul>
+</li>
+</ul>
+<p>如时间复杂度为“常数阶”，指的是算法运行时间不随着n增大而增大，始终为一个固定值</p>
+<p>若为“线性阶”（n），则为线性增长<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423104721.png" alt="image.png"><br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423110949.png" alt="image.png"><br>对数阶增长缓慢，仅次于常数阶</p>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423111019.png" alt="image.png"></p>
+<p>阶乘阶<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423111040.png" alt="image.png"></p>
+<p>通常使用递归实现</p>
+<p>n大于等于4时，阶乘比指数增长更快</p>
+<p>通常用最差时间复杂度作为评判标准</p>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423111052.png" alt="image.png"></p>
+<ul>
+<li><p>计算方法</p>
+<ul>
+<li>主要看循环，并列是相加，嵌套是相乘</li>
+</ul>
+</li>
+</ul>
+<h2 id="空间复杂度"><a href="#空间复杂度" class="headerlink" title="空间复杂度"></a>空间复杂度</h2><p>空间复杂度：衡量算法<strong>占用内存空间</strong>随着数据量变大时的增长趋势<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423111120.png" alt="image.png"></p>
+<p>通常只关注最差空间复杂度<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423111130.png" alt="image.png"></p>
+<h2 id="数学基础知识"><a href="#数学基础知识" class="headerlink" title="数学基础知识"></a>数学基础知识</h2><p>质数（素数）</p>
+<ul>
+<li>大于1的自然数中，除了1和它本身外没有其他因数的自然数</li>
+</ul>
+<p>自然数</p>
+<ul>
+<li>从0开始，one by one</li>
+</ul>
+<p>质因数（素因数 or 质因子）</p>
+<ul>
+<li>能整除给定正整数的质数</li>
+</ul>
+<p>互质</p>
+<ul>
+<li>两个没有其他共同质因数的正整数，1与其他正整数（包括1本身）都互质</li>
+</ul>
+<p>丑数</p>
+<ul>
+<li>不能被2、3、5以外其他质数整除的数（1是丑数），即分解后含有2、3、5（任意一个）</li>
+</ul>
+<p>指数<br><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423104758.png" alt="image.png"></p>
+<ul>
+<li></li>
+</ul>
+<h2 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h2><p><strong>基本数据类型：</strong></p>
+<p>数据的“内容类型”</p>
+<p>CPU可以直接进行运算的类型</p>
+<p>  <img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423110146.png" alt="image.png"></p>
+<p><strong>数据结构：</strong></p>
+<p>数据的“组织方式”</p>
+<p>计算机组织与存储数据的方式</p>
+<p><strong>二者联系：</strong></p>
+<p>如果想表示“一排数字”，我们自然会想到使用数组。这是因为数组的线性结构可以表示数字的相邻关系和顺序关系，但至于存储的内容是整数 int、小数 float 还是字符 char ，则与“数据结构”无关。</p>
+<p>式</p>
+<p>  <img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423110156.png" alt="image.png"></p>
+<p>补充：</p>
+<p><img src="https://raw.githubusercontent.com/whisperouo/images/main/20240423110211.png" alt="image.png"></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/02/05/%E9%80%92%E5%BD%92/" rel="prev" title="递归">
+                  <i class="fa fa-angle-left"></i> 递归
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2024/02/05/hexo%E6%9C%80%E7%AE%80%E5%8D%95%E7%9A%84%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%EF%BC%88Mac%EF%BC%89/" rel="next" title="hexo最简单的搭建教程（基于Mac）">
+                  hexo最简单的搭建教程（基于Mac） <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">xs</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
