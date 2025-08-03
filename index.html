@@ -1,9 +1,29 @@
-extends partial/layout
-block content
-	.autopagerize_page_element: .content
-		- page.posts.each(function (item) {
-			include mixins
-			+make_post(item, false)
-		- })
-		include mixins
-		+make_pager(__('prev'), __('next'))
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author"><title>Hexo</title><meta name="description" content="A Blog Powered By Hexo"><meta name="keywords" content=""><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/bootstrap.min.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/style.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><meta name="generator" content="Hexo 7.3.0"><link rel="stylesheet" href="/css/prism.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body><div class="container" id="stage"><div class="row"><div class="col-sm-3 col-xs-12 side-container invisible" id="side-bar"><div class="vertical-text site-title"><h3 class="site-title-small" tabindex="-1"><a class="a-title" href="/">Typography</a></h3><h1 class="site-title-large" tabindex="-1"><a class="a-title" href="/">活版印字</a></h1><!--h6(onclick="triggerSiteNav()") Trigger--></div><br class="visible-lg visible-md visible-sm"><div class="site-title-links" id="site-nav"><ul><li><a class="current" href="/">Home</a></li><li><a href="/archives">Archive</a></li><li class="soc"><a href="http://example.com/atom.xml" target="_blank" rel="noopener noreferrer" aria-label="RSS"><i class="fa fa-rss">&nbsp;</i></a></li></ul><div class="visible-lg visible-md visible-sm site-nav-footer"><br class="site-nav-footer-br"><footer><p>&copy;&nbsp;2025&nbsp;<a target="_blank" href="http://example.com" rel="noopener noreferrer">John Doe</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div><div class="col-sm-9 col-xs-12 main-container invisible" id="main-container"><div class="autopagerize_page_element"><div class="content"><div class="post-container"><p class="post-title"><a href="/2025/07/22/%E7%BA%B3%E7%93%A6%E5%B0%94%E5%AE%9D%E5%85%B8/">纳瓦尔宝典</a></p><p class="post-meta"><span class="date meta-item">Posted at&nbsp;2025-07-22</span></p><p class="post-abstract">这是我第一篇博客
+测试项目标识
+
+1
+2
+3
+
+</p></div><div class="post-container"><p class="post-title"><a href="/2025/06/21/clickhouse/">clickhouse</a></p><p class="post-meta"><span class="date meta-item">Posted at&nbsp;2025-06-21</span></p><p class="post-abstract">用于OLAP（在线分析处理）的开源列式【数据库管理系统】
+重点
+列式存储 — 只需几列字段时，可以从对应列文件读取，大大减少I&#x2F;O
+字段压缩 — 相同列数据类型相同，所以可以压缩，极大减少数据存储空间，减少磁盘I&#x2F;O
+
+表引擎不同引擎决定了数据怎么存储、查询
+
+MergeTree
+Replac...</p></div><div class="post-container"><p class="post-title"><a href="/2025/06/21/flink%E5%8E%9F%E7%90%86/">flink原理</a></p><p class="post-meta"><span class="date meta-item">Posted at&nbsp;2025-06-21</span></p><p class="post-abstract"></p></div><div class="post-container"><p class="post-title"><a href="/2025/06/21/Spark/"></a></p><p class="post-meta"><span class="date meta-item">Posted at&nbsp;2025-06-21</span></p><p class="post-abstract">Spark中间结果保存在内存，延迟小
+task以线程方式，任务启动快
+核心概念RDD弹性分布式数据集（只封装计算逻辑，不保存数据）
+
+不可变
+
+可分区
+
+并行计算
+
+
+spark最基本的数据抽象
+这个抽象的数据模型，让使用者可以不必关心底层数据是分布式的只需关心如何把应用逻辑转化为一系列转换函数，进而实现管道化，...</p></div><div class="post-container"><p class="post-title"><a href="/2025/06/20/hello-world/">Hello World xusu</a></p><p class="post-meta"><span class="date meta-item">Posted at&nbsp;2025-06-20</span></p><p class="post-abstract">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in trouble...</p></div><div class="pagination no-margin-bottom"><p class="clearfix"><p> Page 1 / 1 &nbsp;</p><p><span class="pre pagbuttons"><i class="fa fa-angle-double-left"></i>&nbsp;<a role="navigation" href="/" aria-label="Previous">Previous</a></span><span>&nbsp;</span><span class="next pagbuttons"><a role="navigation" href="/" aria-label="Next">Next</a>&nbsp;<i class="fa fa-angle-double-right"></i></span></p></p></div></div></div><div class="visible-xs site-bottom-footer"><footer><p>&copy;&nbsp;2025&nbsp;<a target="_blank" href="http://example.com" rel="noopener noreferrer">John Doe</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div></div><script src="/js/jquery-3.1.0.min.js"></script><script src="/js/bootstrap.min.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/google-analytics.js"></script><script src="/js/typography.js"></script></body></html>
